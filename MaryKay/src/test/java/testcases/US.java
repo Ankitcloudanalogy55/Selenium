@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import common.Base;
 import common.RetryAnalyzer;
 
-// 25 may
+// 25 may new
 
 public class US extends Base {
 	public static String fakeMailWeb;
