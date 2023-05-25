@@ -21,7 +21,6 @@ import org.testng.annotations.Test;
 import common.Base;
 import common.RetryAnalyzer;
 
-// 25 may  xc
 
 public class US extends Base {
 	public static String fakeMailWeb;
@@ -40,7 +39,7 @@ public class US extends Base {
 
 // FAKEMAIL    
 		driver.get(config.getProperty("FAKE_MAIL_URL"));
-		System.out.println("FAKE MAIL OPEN");
+		System.out.println("FAKE MAIL WEB - PASS");
 		fakeMailWeb = driver.getWindowHandle();
 		driver.findElement(By.xpath(US_loc.getProperty("COPY_MAIL_BUTTON"))).click();
 		String Mail = driver.findElement(By.xpath(US_loc.getProperty("MAIL"))).getText();
@@ -51,6 +50,7 @@ public class US extends Base {
 		driver.get(config.getProperty("US_URL"));
 		String mkWeb = driver.getWindowHandle();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("RECRUITER_FIELD"))));
+		System.out.println("US SIGNUP PAGE OPEN - PASS");
 		WebElement email = driver.findElement(By.xpath(US_loc.getProperty("BY_EMAIL_RADIO_BUTTON")));
 		js.executeScript("arguments[0].scrollIntoView(true);", email);
 		email.click();
@@ -66,16 +66,19 @@ public class US extends Base {
 		// OPEN(switch to) I-FRAME and COPY VERIFICATION CODE
 		driver.switchTo().frame("iframeMail");
 		String verificationCode = driver.findElement(By.xpath(US_loc.getProperty("VERIFICATION_CODE"))).getText();
+		System.out.println("VERIFICATION CODE COPIED - PASS");
 		driver.switchTo().window(mkWeb);
 
 // RESETPASSWORD
 		driver.findElement(By.xpath(US_loc.getProperty("VERIFICATION_CODE_FIELD"))).sendKeys(verificationCode);
+		System.out.println("RESET PASSWORD PAGE OPEN ");
 		driver.findElement(By.xpath(US_loc.getProperty("NEW_PASSWORD_FIELD"))).sendKeys(config.getProperty("Password"));
 		driver.findElement(By.xpath(US_loc.getProperty("VERIFY_NEW_PASSWORD_FIELD"))).sendKeys(config.getProperty("Password"));
 		driver.findElement(By.xpath(US_loc.getProperty("PASSWORD_SUBMIT_BUTTON"))).click();
 
 // PERSONAL SECTION		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("CONFIRM_SSN_FIELD"))));
+		System.out.println("SIGNUP PAGE - PASS");
 		driver.findElement(By.xpath(US_loc.getProperty("FIRST_NAME_FIELD"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		driver.findElement(By.xpath(US_loc.getProperty("MIDDLE_NAME_FIELD"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		driver.findElement(By.xpath(US_loc.getProperty("LAST_NAME_FIELD"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
@@ -90,6 +93,7 @@ public class US extends Base {
 
 // ADDRESSSECTION
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(US_loc.getProperty("SPINNER"))));
+		System.out.println("PERSONAL SECTION - PASS");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("STREET_FIELD")))).sendKeys(config.getProperty("STREET_NAME"));
 		driver.findElement(By.xpath(US_loc.getProperty("STREET_LINE_2_FIELD"))).sendKeys(config.getProperty("APT_BLDG_SUITE_NAME"));
 		driver.findElement(By.xpath(US_loc.getProperty("CITY_FIELD"))).sendKeys(config.getProperty("CITY_NAME"));
@@ -102,6 +106,7 @@ public class US extends Base {
 
 // CONTACTSECTION
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(US_loc.getProperty("SPINNER"))));
+		System.out.println("ADDRESS SECTION - PASS");
 		driver.findElement(By.xpath(US_loc.getProperty("MOBILE_FIELD"))).sendKeys(RandomStringUtils.randomNumeric(10));
 		driver.findElement(By.xpath(US_loc.getProperty("PHONE_FIELD"))).sendKeys(RandomStringUtils.randomNumeric(10));
 		List<WebElement> CONTACT_CHECKBOX = driver.findElements(By.xpath(US_loc.getProperty("PRIMARY_RADIO_BUTTON")));
@@ -110,6 +115,7 @@ public class US extends Base {
 
 // ADDITIONALSECTION
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(US_loc.getProperty("SPINNER"))));
+		System.out.println("CONTACT SECTION - PASS");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("ADDITIONAL_RADIO_BUTTON"))));
 		List<WebElement> ADDITIONAL_RADIO_BUTTON = driver.findElements(By.xpath(US_loc.getProperty("ADDITIONAL_RADIO_BUTTON")));
 		ADDITIONAL_RADIO_BUTTON.get(1).click();
@@ -122,6 +128,7 @@ public class US extends Base {
 		
 // LEGALSECTION
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(US_loc.getProperty("SPINNER"))));
+		System.out.println("ADDITIONAL SECTION - PASS");
 		js.executeScript("window.scroll(0,200)", "");
 		WebElement container = driver.findElement(By.xpath(US_loc.getProperty("GENERAL_TERMS_AND_CONDITIONS_CONTAINER")));
 		js.executeScript("arguments[0].scrollTop = arguments[1];", container, 10000);
@@ -134,6 +141,7 @@ public class US extends Base {
 		
 // REVIEWSECTION
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(US_loc.getProperty("SPINNER"))));
+		System.out.println("LEGAL SECTION - PASS");
 		WebElement REVIEW_CHECKBOX = driver.findElement(By.xpath(US_loc.getProperty("I_CONFIRM_CHECKBOX")));
 		Thread.sleep(5000);
 		js.executeScript("arguments[0].scrollIntoView(true);", REVIEW_CHECKBOX);
@@ -144,57 +152,54 @@ public class US extends Base {
 
 // STARTERKITS
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("CONTINUE_BUTTON"))));
+		System.out.println("REVIEW SECTION - PASS");
 		WebElement checkbox1 = driver.findElement(By.xpath(US_loc.getProperty("STARTER_KIT")));
 		js.executeScript("arguments[0].scrollIntoView(true);", checkbox1);
 		action.moveToElement(checkbox1).click(checkbox1).perform();
 		driver.findElement(By.xpath(US_loc.getProperty("CONTINUE_BUTTON"))).click();
 
-		// OPTIONAL ADD-ON
+// OPTIONAL ADD-ON
 		driver.findElement((By.xpath(US_loc.getProperty("OPTIONAL_ADD_ON_CONTINUE_BUTTON")))).click();
-
-
-		// CHECKOUT BUTTON
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("CHECKOUT_BUTTON")))).click();
-
-		/* SHOOPPING BAG
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("//h1[@class='h2 section-title cart-title']"))));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("//a[@class='btn btn-secondary btn-block checkout-btn lockable-btn lockable-bound']")))).click();
-
-		// BONUS
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("//button[@class='btn btn-primary btn-block automation-bonus-continueButton submit-bonuses lockable-bound']")))).click(); // check order
-		*/
+		System.out.println("STARTER KIT SECTION - PASS");
 		
-		// SHIPPING METHOD CONTINUE TO PAYMENT BUTTON
-		Thread.sleep(5000);
+// CHECKOUT BUTTON
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("CHECKOUT_BUTTON")))).click();
+		System.out.println("OPTIONAL ADD ON SECTION - PASS");
+		
+// SHIPPING METHOD CONTINUE TO PAYMENT BUTTON
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("SHIPPING_HEADING"))));
+		System.out.println("CHECKOUT SECTION - - PASS");
+		Thread.sleep(5000);		
 		WebElement CONTINUETOPAYMENTBUTTON = driver.findElement(By.xpath(US_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
-		wait.until(ExpectedConditions.visibilityOf(CONTINUETOPAYMENTBUTTON));
+		wait.until(ExpectedConditions.visibilityOf(CONTINUETOPAYMENTBUTTON));		
 		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON);
 		CONTINUETOPAYMENTBUTTON.click();
 
-		// 3. PAYMENT SECTION
+// PAYMENT SECTION
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(US_loc.getProperty("PAYMENT_PAGE_CHECKBOX"))).click();
+		System.out.println("SHIPPING METHOD SECTION - PASS");
 		WebElement PAYMENT_BUTTON = driver.findElement(By.xpath(US_loc.getProperty("CREDIT_CARD_BUTTON")));
 		wait.until(ExpectedConditions.visibilityOf(PAYMENT_BUTTON));
 		js.executeScript("arguments[0].scrollIntoView(true);", PAYMENT_BUTTON);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		PAYMENT_BUTTON.click();
 
 // CREDITCARDSECTION
+		Thread.sleep(15000);
 		driver.switchTo().frame("wp-cl-custom-html-iframe");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("EXPIRY_MONTH_FIELD"))));
-		driver.findElement(By.xpath(config.getProperty("CARD_NUMBER_FIELD"))).sendKeys("CARD_NUMBER");
+		System.out.println("PAYMENT SECTION PASS");
+		driver.findElement(By.xpath(US_loc.getProperty("CARD_NUMBER_FIELD"))).sendKeys(config.getProperty("CARD_NUMBER"));
 		String credit_month = "" + (1 + (int) (Math.floor(Math.random() * 12)));
-		String preMonth = credit_month.length() > 1 ? "" : "0"; // conditional statement & length function -> 3445 = 4
-																// digit
+		String preMonth = credit_month.length() > 1 ? "" : "0"; // conditional statement & length function -> 3445 = 4																
 		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_MONTH_FIELD"))).sendKeys(preMonth + month);
-		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_YEAR_FIELD")))
-				.sendKeys("" + (25 + (int) (Math.floor(Math.random() * 16))));
-		driver.findElement(By.xpath(US_loc.getProperty("CVV_FIELD")))
-				.sendKeys("" + (100 + (int) (Math.floor(Math.random() * 100))));
+		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_YEAR_FIELD"))).sendKeys("" + (25 + (int) (Math.floor(Math.random() * 16))));
+		driver.findElement(By.xpath(US_loc.getProperty("CVV_FIELD"))).sendKeys("" + (100 + (int) (Math.floor(Math.random() * 100))));
 		driver.findElement(By.xpath(US_loc.getProperty("SUBMIT_PAYMENT_BUTTON"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("ORDER_NUMBER"))));
-
+		System.out.println("ORDER PLACED - PASS");
+		
 // SCREENSHOT
 		Date currentdate = new Date();
 		String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
@@ -202,6 +207,8 @@ public class US extends Base {
 		FileUtils.copyFile(screenshotFile,new File(System.getProperty("user.dir")+"/MaryKay Screenshot/US ORDERS"+screenshotfilename+".png"));
 
 // CONFIRMATION MAIL    
+		driver.switchTo().window(fakeMailWeb);
+		System.out.println("BACK TO FAKE MAIL WEB");
 		driver.findElement(By.xpath(US_loc.getProperty("BACK_BUTTON_OF_FAKE_MAIL"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty(
 				"/html/body/div[2]/div[3]/div[2]/div[1]/div/table/tbody/tr[1][@data-href='4'][@class='hidden-xs hidden-sm klikaciRadek newMail']"))))

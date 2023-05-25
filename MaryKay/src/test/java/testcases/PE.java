@@ -27,7 +27,7 @@ public class PE extends Base {
 	public static String mkWeb;
 	public static String verificationCode;
 	public static String[] consultantID = { "183269", "183269" };
-//	bvcbvcb
+
 	
 	@Test(testName = "FAKE MAIL WEB", priority = 1)
 	public static void fakeMail() throws InterruptedException {

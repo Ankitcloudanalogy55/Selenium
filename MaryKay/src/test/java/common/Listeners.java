@@ -26,17 +26,18 @@ public class Listeners extends screenshotUtil implements ITestListener {
 		System.out.println("Test failed - screenshot captured");
 		try {
 			getScreenshot();
+			 System.setProperty("org.uncommons.reportng.escape-output", "false");
+			    Date currentdate = new Date();
+			    String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
+		        
+		        // DYNAMIC PATH-
+		        Reporter.log("<a href="+System.getProperty("user.dir")+"/screenshot/"+screenshotfilename+".png"+">Fail Test Results</a>");
+		        System.out.println("Report Generated");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	    System.setProperty("org.uncommons.reportng.escape-output", "false");
-	    Date currentdate = new Date();
-	    String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
-        
-        // DYNAMIC PATH-
-        Reporter.log("<a href="+System.getProperty("user.dir").replace(" ", "%20")+"/screenshot/"+screenshotfilename+".png"+">Fail Test Results</a>");
-        
+	   
         // STATIC PATH -
         // Reporter.log("<a href="+"C:/Users/Cloud%20Analogy/OneDrive/Testing/MaryKay/screenshot/"+screenshotfilename+".png"+">Fail Test Results</a>");
     }

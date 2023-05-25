@@ -9,5 +9,5 @@
     <classes>
       <class name="testcases.PE2"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> <!-- Peru Functional Testing-->
+</suite> <!--Regreesion Suite -->

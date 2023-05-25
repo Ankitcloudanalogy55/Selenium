@@ -8,20 +8,31 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">35,711</td><td></td><td></td></tr>
+<tr><th colspan="8">Regreesion Suite</th></tr>
+<tr><td><a href="#t0">FUnctional Testing</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">566,320</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.PE2</td><td><a href="#m0">peruAgreement</a></td><td rowspan="1">1685011186415</td><td rowspan="1">35189</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regreesion Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FUnctional Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.US</td><td><a href="#m0">usAgreement</a></td><td rowspan="1">1685020767102</td><td rowspan="1">310994</td></tr><tr><th colspan="4">FUnctional Testing &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">testcases.US</td><td><a href="#m1">usAgreement</a></td><td rowspan="1">1685020512028</td><td rowspan="1">253940</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testcases.PE2#peruAgreement</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Method name is = peruAgreement<br/><a href=C:\Users\Cloud%20Analogy\OneDrive\Testing\MaryKay/screenshot/May-25-16-10-22-IST-2023.png>Fail Test Results</a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Comienza tu Negocio &apos;]&quot;}
+<h2>FUnctional Testing</h2><h3 id="m0">testcases.US#usAgreement</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Method name is = usAgreement<br/><a href=C:\PROJECTS\MaryKay/screenshot/May-25-18-54-38-IST-2023.png>Fail Test Results</a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;order-number-msg&apos;] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60821}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60821/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef9be69c4c91118c67d9726d2fd7e9e5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at testcases.US.usAgreement(US.java:185)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.US#usAgreement</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Method name is = usAgreement</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-xs-2 maxWidth text-center vertical-middle flex-text-left&apos;]/span[@class=&apos;glyphicon glyphicon-share-alt zavriOkno zrcadli&apos;]&quot;}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03672f09b11ac7170c13ff3b90513a2f, findElement {using=xpath, value=//button[text()=&apos;Comienza tu Negocio &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57584}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57584/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03672f09b11ac7170c13ff3b90513a2f
+Command: [4d971133c89c4995a4466ef2ae66e560, findElement {using=xpath, value=//div[@class=&apos;col-xs-2 maxWidth text-center vertical-middle flex-text-left&apos;]/span[@class=&apos;glyphicon glyphicon-share-alt zavriOkno zrcadli&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60316/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d971133c89c4995a4466ef2ae66e560
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -33,7 +44,7 @@ Session ID: 03672f09b11ac7170c13ff3b90513a2f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at testcases.PE2.peruAgreement(PE2.java:87)
+	at testcases.US.usAgreement(US.java:194)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

@@ -27,7 +27,7 @@ public class PE2 extends Base {
 	public static String mkWeb;
 	public static String verificationCode;
 	public static String[] consultantID = { "183269", "183269" };
-//cxvcxv
+
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public static void peruAgreement() throws InterruptedException, IOException {
 //	ALL WAIT - FOR SPECIFIC
@@ -100,7 +100,7 @@ public class PE2 extends Base {
 		System.out.println("VERIFICATION CODE COPIED ");
 		driver.switchTo().window(mkWeb);
 
-//  ADRESETPASSWORD() THROWS INTERRUPTEDEXCEPTION {
+//  RESETPASSWORD() THROWS INTERRUPTEDEXCEPTION {
 		Thread.sleep(5000);
 		System.out.println("RESET PASSWORD PAGE OPEN ");
 		driver.findElement(By.xpath(PE_loc.getProperty("Verification_Code_Field"))).sendKeys(verificationCode);

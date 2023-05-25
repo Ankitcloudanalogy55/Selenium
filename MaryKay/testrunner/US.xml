@@ -9,5 +9,5 @@
     <classes>
       <class name="testcases.US"/>
     </classes>
-  </test> <!-- FUnctional Testing -->
+  </test> <!--US Functional Testing -->
 </suite> <!-- Regreesion Suite -->
