@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">TestListener testing</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">UI.S76_ListenersDemoTest<br>UI.S78_ReportsGeneration<br></th>
+	    <th id="testClassNameId" hidden="true">S76_ListenersDemoTest<br>S78_ReportsGeneration<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\Cloud Analogy\OneDrive\Testing\TestNG\TestRunner\S76_Capture_Screenshot.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">S76_Capture_Screenshot.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:01</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>5</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+											<tr>
+	<td class="time">1682576758875</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('52b0efa7-4c40-4381-9ec6-17e5d550ef07','block');changeSingleIcon('span-52b0efa7-4c40-4381-9ec6-17e5d550ef07');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S76_ListenersDemoTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-52b0efa7-4c40-4381-9ec6-17e5d550ef07' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1682576758875</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>launchApp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.103s</span><br>
+	</td>
+	<td class="result">
+						<div class="noCollapse" id="52b0efa7-4c40-4381-9ec6-17e5d550ef07" style="display: block;">
+												Method name is = launchApp
+												<a href="C:\Users\Cloud Analogy\OneDrive\Testing\TestNG\screenshot\Thu-Apr-27-11-17-34-IST-2023.png">Fail Test Results</a>
+									<a href="javascript:toggleElement('exception-52b0efa7-4c40-4381-9ec6-17e5d550ef07','block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/input\[\@id\=\&apos;user\-nam\&apos;\]&quot;}<br/>
+&nbsp; (Session info: chrome=112.0.5615.138)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [2e1a8482b75117ea66c307cf0b092a12, findElement {using=id, value=//input[@id=&apos;user-nam&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 2e1a8482b75117ea66c307cf0b092a12</b></a><br/>
+		<div class="stackTrace" id="exception-52b0efa7-4c40-4381-9ec6-17e5d550ef07">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					UI.S76_ListenersDemoTest.launchApp(S76_ListenersDemoTest.java:13)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+											<tr>
+	<td class="time">1682576758542</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('7e6d3011-2e35-4cdb-86a7-0d5395f5b49b','block');changeSingleIcon('span-7e6d3011-2e35-4cdb-86a7-0d5395f5b49b');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S76_ListenersDemoTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-7e6d3011-2e35-4cdb-86a7-0d5395f5b49b' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1682576758542</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>launchApp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.166s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="7e6d3011-2e35-4cdb-86a7-0d5395f5b49b" style="display: block;">
+												Method name is = launchApp
+									<a href="javascript:toggleElement('exception-7e6d3011-2e35-4cdb-86a7-0d5395f5b49b','block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/input\[\@id\=\&apos;user\-nam\&apos;\]&quot;}<br/>
+&nbsp; (Session info: chrome=112.0.5615.138)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [2e1a8482b75117ea66c307cf0b092a12, findElement {using=id, value=//input[@id=&apos;user-nam&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 2e1a8482b75117ea66c307cf0b092a12</b></a><br/>
+		<div class="stackTrace" id="exception-7e6d3011-2e35-4cdb-86a7-0d5395f5b49b">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					UI.S76_ListenersDemoTest.launchApp(S76_ListenersDemoTest.java:13)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1682576758378</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('a138ced2-b487-41d0-af51-25fa07d1f15f','block');changeSingleIcon('span-a138ced2-b487-41d0-af51-25fa07d1f15f');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S76_ListenersDemoTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-a138ced2-b487-41d0-af51-25fa07d1f15f' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1682576758378</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>launchApp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.160s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="a138ced2-b487-41d0-af51-25fa07d1f15f" style="display: block;">
+												Method name is = launchApp
+									<a href="javascript:toggleElement('exception-a138ced2-b487-41d0-af51-25fa07d1f15f','block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/input\[\@id\=\&apos;user\-nam\&apos;\]&quot;}<br/>
+&nbsp; (Session info: chrome=112.0.5615.138)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [2e1a8482b75117ea66c307cf0b092a12, findElement {using=id, value=//input[@id=&apos;user-nam&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 2e1a8482b75117ea66c307cf0b092a12</b></a><br/>
+		<div class="stackTrace" id="exception-a138ced2-b487-41d0-af51-25fa07d1f15f">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					UI.S76_ListenersDemoTest.launchApp(S76_ListenersDemoTest.java:13)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1682576758710</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('19bdae76-a7b2-4e97-abe9-a40b019b010c','block');changeSingleIcon('span-19bdae76-a7b2-4e97-abe9-a40b019b010c');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S76_ListenersDemoTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-19bdae76-a7b2-4e97-abe9-a40b019b010c' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1682576758710</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>launchApp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.163s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="19bdae76-a7b2-4e97-abe9-a40b019b010c" style="display: block;">
+												Method name is = launchApp
+									<a href="javascript:toggleElement('exception-19bdae76-a7b2-4e97-abe9-a40b019b010c','block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/input\[\@id\=\&apos;user\-nam\&apos;\]&quot;}<br/>
+&nbsp; (Session info: chrome=112.0.5615.138)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [2e1a8482b75117ea66c307cf0b092a12, findElement {using=id, value=//input[@id=&apos;user-nam&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 2e1a8482b75117ea66c307cf0b092a12</b></a><br/>
+		<div class="stackTrace" id="exception-19bdae76-a7b2-4e97-abe9-a40b019b010c">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					UI.S76_ListenersDemoTest.launchApp(S76_ListenersDemoTest.java:13)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1682576757811</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('d3888dd1-c7a9-47c9-817e-d3abe1790144','block');changeSingleIcon('span-d3888dd1-c7a9-47c9-817e-d3abe1790144');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S76_ListenersDemoTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-d3888dd1-c7a9-47c9-817e-d3abe1790144' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1682576757811</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>launchApp</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.561s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="d3888dd1-c7a9-47c9-817e-d3abe1790144" style="display: block;">
+												Method name is = launchApp
+									<a href="javascript:toggleElement('exception-d3888dd1-c7a9-47c9-817e-d3abe1790144','block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#\/\/input\[\@id\=\&apos;user\-nam\&apos;\]&quot;}<br/>
+&nbsp; (Session info: chrome=112.0.5615.138)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [2e1a8482b75117ea66c307cf0b092a12, findElement {using=id, value=//input[@id=&apos;user-nam&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58518/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 2e1a8482b75117ea66c307cf0b092a12</b></a><br/>
+		<div class="stackTrace" id="exception-d3888dd1-c7a9-47c9-817e-d3abe1790144">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					UI.S76_ListenersDemoTest.launchApp(S76_ListenersDemoTest.java:13)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+												<tr>
+			<td class="time">1682576759186</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('20b0de6f-5028-4d38-a068-492b67c4eff6','block');changeSingleIcon('span-20b0de6f-5028-4d38-a068-492b67c4eff6');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S78_ReportsGeneration</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-20b0de6f-5028-4d38-a068-492b67c4eff6' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1682576759186</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reportTest4</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.001s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="20b0de6f-5028-4d38-a068-492b67c4eff6" style="display: block;">
+												Method name is = reportTest4
+												Status of execution is = 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1682576759182</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('65775f67-1046-49ce-81d7-f42b7855ef69','block');changeSingleIcon('span-65775f67-1046-49ce-81d7-f42b7855ef69');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S78_ReportsGeneration</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-65775f67-1046-49ce-81d7-f42b7855ef69' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1682576759182</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reportTest3</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.002s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="65775f67-1046-49ce-81d7-f42b7855ef69" style="display: block;">
+												Method name is = reportTest3
+												Status of execution is = 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1682576759171</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('825c1422-c1e3-468f-91af-57c4070169a8','block');changeSingleIcon('span-825c1422-c1e3-468f-91af-57c4070169a8');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S78_ReportsGeneration</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-825c1422-c1e3-468f-91af-57c4070169a8' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1682576759171</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reportTest1</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.002s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="825c1422-c1e3-468f-91af-57c4070169a8" style="display: block;">
+												Method name is = reportTest1
+												test 1 report
+												Status of execution is = 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1682576759176</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('eb475d70-3a3d-4f3b-a7d6-fc9df2fd12ad','block');changeSingleIcon('span-eb475d70-3a3d-4f3b-a7d6-fc9df2fd12ad');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>UI.S78_ReportsGeneration</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-eb475d70-3a3d-4f3b-a7d6-fc9df2fd12ad' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1682576759176</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reportTest2</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.004s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="eb475d70-3a3d-4f3b-a7d6-fc9df2fd12ad" style="display: block;">
+												Method name is = reportTest2
+												Status of execution is = 1
+								</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

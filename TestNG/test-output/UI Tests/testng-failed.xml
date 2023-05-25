@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UI Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Functional Testing(failed)">
+    <classes>
+      <class name="UI.S65_SoftAssertion">
+        <methods>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- UI.S65_SoftAssertion -->
+    </classes>
+  </test> <!-- Functional Testing(failed) -->
+</suite> <!-- Failed suite [UI Tests] -->
