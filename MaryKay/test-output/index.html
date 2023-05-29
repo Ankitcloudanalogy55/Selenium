@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regreesion_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Regreesion Suite</span>
+              <span class="suite-name border-passed">Regreesion Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,35 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regreesion_Suite" class="hide-methods failed suite-Regreesion_Suite"> (hide)</a> <!-- hide-methods failed suite-Regreesion_Suite -->
-                      <a href="#" panel-name="suite-Regreesion_Suite" class="show-methods failed suite-Regreesion_Suite"> (show)</a> <!-- show-methods failed suite-Regreesion_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regreesion_Suite" class="hide-methods passed suite-Regreesion_Suite"> (hide)</a> <!-- hide-methods passed suite-Regreesion_Suite -->
+                      <a href="#" panel-name="suite-Regreesion_Suite" class="show-methods passed suite-Regreesion_Suite"> (show)</a> <!-- show-methods passed suite-Regreesion_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Regreesion_Suite">
+                    <div class="method-list-content passed suite-Regreesion_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regreesion_Suite" title="testcases.US" class="method navigator-link" hash-for-method="usAgreement">usAgreement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Regreesion_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Regreesion_Suite" class="hide-methods skipped suite-Regreesion_Suite"> (hide)</a> <!-- hide-methods skipped suite-Regreesion_Suite -->
-                      <a href="#" panel-name="suite-Regreesion_Suite" class="show-methods skipped suite-Regreesion_Suite"> (show)</a> <!-- show-methods skipped suite-Regreesion_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Regreesion_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regreesion_Suite" title="testcases.US" class="method navigator-link" hash-for-method="usAgreement">usAgreement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Regreesion_Suite -->
+                    </div> <!-- method-list-content passed suite-Regreesion_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -133,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regreesion_Suite" class="panel Regreesion_Suite">
-          <div class="suite-Regreesion_Suite-class-failed">
+          <div class="suite-Regreesion_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testcases.US</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,61 +130,10 @@
                   <a name="usAgreement">
                   </a> <!-- usAgreement -->
                   <span class="method-name">usAgreement</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;order-number-msg&apos;] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60821}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60821/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ef9be69c4c91118c67d9726d2fd7e9e5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at testcases.US.usAgreement(US.java:185)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regreesion_Suite-class-failed -->
-          <div class="suite-Regreesion_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testcases.US</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="usAgreement">
-                  </a> <!-- usAgreement -->
-                  <span class="method-name">usAgreement</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-xs-2 maxWidth text-center vertical-middle flex-text-left&apos;]/span[@class=&apos;glyphicon glyphicon-share-alt zavriOkno zrcadli&apos;]&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d971133c89c4995a4466ef2ae66e560, findElement {using=xpath, value=//div[@class=&apos;col-xs-2 maxWidth text-center vertical-middle flex-text-left&apos;]/span[@class=&apos;glyphicon glyphicon-share-alt zavriOkno zrcadli&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60316/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d971133c89c4995a4466ef2ae66e560
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at testcases.US.usAgreement(US.java:194)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regreesion_Suite-class-skipped -->
+          </div> <!-- suite-Regreesion_Suite-class-passed -->
         </div> <!-- panel Regreesion_Suite -->
         <div panel-name="test-xml-Regreesion_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -256,20 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'usAgreement')
 data.setCell(0, 2, 'testcases.US')
-data.setCell(0, 3, 310994);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'usAgreement')
-data.setCell(1, 2, 'testcases.US')
-data.setCell(1, 3, 253940);
+data.setCell(0, 3, 310569);
 window.suiteTableData['Regreesion_Suite']= { tableData: data, tableDiv: 'times-div-Regreesion_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Regreesion_Suite">
               </div> <!-- times-div-Regreesion_Suite -->
             </div> <!-- times-div -->
@@ -284,13 +215,7 @@ return data;
               <span class="reporter-method-name">usAgreement</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Method name is = usAgreement</span>
-                <span class="reporter-method-output"><a href=C:\PROJECTS\MaryKay/screenshot/May-25-18-54-38-IST-2023.png>Fail Test Results</a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">usAgreement</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = usAgreement</span>
+                <span class="reporter-method-output">Status of execution is = 1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,17 +240,11 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">usAgreement</span>
-                <span class="method-start">2885 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">usAgreement</span>
-                <span class="method-start">257959 ms</span>
+                <span class="method-start">3253 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closingBrowser</span>
-                <span class="method-start">569232 ms</span>
+                <span class="method-start">313873 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

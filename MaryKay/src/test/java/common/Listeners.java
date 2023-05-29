@@ -31,7 +31,7 @@ public class Listeners extends screenshotUtil implements ITestListener {
 			    String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
 		        
 		        // DYNAMIC PATH-
-		        Reporter.log("<a href="+System.getProperty("user.dir")+"/screenshot/"+screenshotfilename+".png"+">Fail Test Results</a>");
+		        Reporter.log("<a href="+System.getProperty("user.dir").replace(" ", "_")+"/screenshot/"+screenshotfilename+".png"+">Fail Test Results</a>");
 		        System.out.println("Report Generated");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

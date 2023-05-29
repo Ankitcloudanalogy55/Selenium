@@ -306,7 +306,7 @@ public class PE2 extends Base {
 		Date currentdate = new Date();
 		String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File(System.getProperty("user.dir")+"/MaryKay Screenshot/"+screenshotfilename+".png"));
+		FileUtils.copyFile(screenshotFile, new File(System.getProperty("user.dir")+"/MaryKay Screenshot/PE ORDERS/"+screenshotfilename+".png"));
 		System.out.println("CREDIT CARD SECTION PASS");
 		System.out.println("SCREENSHOT CAPTURE");
 		driver.switchTo().window(fakeMailWeb);

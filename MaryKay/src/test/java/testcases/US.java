@@ -167,12 +167,13 @@ public class US extends Base {
 		System.out.println("OPTIONAL ADD ON SECTION - PASS");
 		
 // SHIPPING METHOD CONTINUE TO PAYMENT BUTTON
+		Thread.sleep(10000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("SHIPPING_HEADING"))));
 		System.out.println("CHECKOUT SECTION - - PASS");
-		Thread.sleep(5000);		
 		WebElement CONTINUETOPAYMENTBUTTON = driver.findElement(By.xpath(US_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
 		wait.until(ExpectedConditions.visibilityOf(CONTINUETOPAYMENTBUTTON));		
 		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON);
+//		driver.findElement(By.xpath(US_loc.getProperty("PANEL"))).click();
 		CONTINUETOPAYMENTBUTTON.click();
 
 // PAYMENT SECTION
@@ -189,11 +190,11 @@ public class US extends Base {
 		Thread.sleep(15000);
 		driver.switchTo().frame("wp-cl-custom-html-iframe");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("EXPIRY_MONTH_FIELD"))));
-		System.out.println("PAYMENT SECTION PASS");
+		System.out.println("PAYMENT SECTION - PASS");
 		driver.findElement(By.xpath(US_loc.getProperty("CARD_NUMBER_FIELD"))).sendKeys(config.getProperty("CARD_NUMBER"));
 		String credit_month = "" + (1 + (int) (Math.floor(Math.random() * 12)));
 		String preMonth = credit_month.length() > 1 ? "" : "0"; // conditional statement & length function -> 3445 = 4																
-		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_MONTH_FIELD"))).sendKeys(preMonth + month);
+		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_MONTH_FIELD"))).sendKeys(preMonth + credit_month);
 		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_YEAR_FIELD"))).sendKeys("" + (25 + (int) (Math.floor(Math.random() * 16))));
 		driver.findElement(By.xpath(US_loc.getProperty("CVV_FIELD"))).sendKeys("" + (100 + (int) (Math.floor(Math.random() * 100))));
 		driver.findElement(By.xpath(US_loc.getProperty("SUBMIT_PAYMENT_BUTTON"))).click();
@@ -204,14 +205,11 @@ public class US extends Base {
 		Date currentdate = new Date();
 		String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile,new File(System.getProperty("user.dir")+"/MaryKay Screenshot/US ORDERS"+screenshotfilename+".png"));
+		FileUtils.copyFile(screenshotFile,new File(System.getProperty("user.dir")+"/MaryKay Screenshot/US ORDERS/"+screenshotfilename+".png"));
 
 // CONFIRMATION MAIL    
 		driver.switchTo().window(fakeMailWeb);
 		System.out.println("BACK TO FAKE MAIL WEB");
 		driver.findElement(By.xpath(US_loc.getProperty("BACK_BUTTON_OF_FAKE_MAIL"))).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty(
-				"/html/body/div[2]/div[3]/div[2]/div[1]/div/table/tbody/tr[1][@data-href='4'][@class='hidden-xs hidden-sm klikaciRadek newMail']"))))
-				.click();
 	}
 }
