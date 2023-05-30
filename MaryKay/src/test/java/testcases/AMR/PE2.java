@@ -1,4 +1,4 @@
-package testcases;
+package testcases.AMR;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,27 +30,27 @@ public class PE2 extends Base {
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public static void peruAgreement() throws InterruptedException, IOException {
-//	ALL WAIT - FOR SPECIFIC
+//	COMMON
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		driver.manage().deleteAllCookies();
 
+// FAKE MAIL 	
 		driver.get(config.getProperty("FAKE_MAIL_URL"));
-		System.out.println("FAKE MAIL OPEN");
+		System.out.println("FAKE MAIL OPEN ");
 		fakeMailWeb = driver.getWindowHandle();
 		driver.findElement(By.xpath(PE_loc.getProperty("Copy_Mail_Button"))).click();
 		String Mail = driver.findElement(By.xpath(PE_loc.getProperty("Mail"))).getText();
 		driver.switchTo().newWindow(WindowType.TAB);
 		System.out.println("MAIL COPIED: "+Mail);
 
-//	MARYKAY() THROWS INTERRUPTEDEXCEPTION 																
+//	MARYKAY															
 		driver.get(config.getProperty("PE_URL"));
 		Thread.sleep(5000);
 		mkWeb = driver.getWindowHandle();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Consultant_Number"))))
-				.sendKeys(consultantID[(int) (Math.floor(Math.random() * 2))]);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Consultant_Number")))).sendKeys(consultantID[(int) (Math.floor(Math.random() * 2))]);
 		System.out.println("PERU SIGNUP PAGE OPEN");
 		WebElement recruiter = driver.findElement(By.xpath(PE_loc.getProperty("Recruiter_Button"))); 
 		js.executeScript("arguments[0].scrollIntoView(true);", recruiter);
@@ -70,8 +70,7 @@ public class PE2 extends Base {
 //	THIS WILL USE TO EXECUTE JAVASCRIPT CODE IN JAVA LANGUAGE
 				js.executeScript("window.scroll(0,800)", "");
 				driver.findElement(By.xpath(PE_loc.getProperty("Register_Button"))).click();
-				wait.until(ExpectedConditions
-						.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Verification_Code_Field"))));
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Verification_Code_Field"))));
 				driver.switchTo().window(fakeMailWeb);
 				System.out.println("BACK TO FAKE MAIL WEB");
 			}
@@ -85,13 +84,12 @@ public class PE2 extends Base {
 //  THIS WILL USE TO EXECUTE JAVASCRIPT CODE IN JAVA LANGUAGE
 			js.executeScript("window.scroll(0,800)", "");
 			driver.findElement(By.xpath(PE_loc.getProperty("Register_Button"))).click();
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Verification_Code_Field"))));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Verification_Code_Field"))));
 			driver.switchTo().window(fakeMailWeb);
 			System.out.println("BACK TO FAKE MAIL WEB");
 		}
 
-//	GETVERIFICATIONCODE() THROWS INTERRUPTEDEXCEPTION {
+//	GET VERIFICATION CODE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Received_Code")))).click();
 		// OPEN(switch to) I-FRAME and COPY VERIFICATION CODE
@@ -100,7 +98,7 @@ public class PE2 extends Base {
 		System.out.println("VERIFICATION CODE COPIED ");
 		driver.switchTo().window(mkWeb);
 
-//  RESETPASSWORD() THROWS INTERRUPTEDEXCEPTION {
+//  RESET PASSWORD PAGE
 		Thread.sleep(5000);
 		System.out.println("RESET PASSWORD PAGE OPEN ");
 		driver.findElement(By.xpath(PE_loc.getProperty("Verification_Code_Field"))).sendKeys(verificationCode);
@@ -109,7 +107,7 @@ public class PE2 extends Base {
 				.sendKeys(config.getProperty("Password"));
 		driver.findElement(By.xpath(PE_loc.getProperty("Submit_Password_Button"))).click();
 
-//	RECRUITERSECTION() THROWS INTERRUPTEDEXCEPTION {
+//	RECRUITERSECTION PA
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(PE_loc.getProperty("Spinner"))));
 		System.out.println("SIGNUP SUCCESSFULLY");
@@ -238,24 +236,19 @@ public class PE2 extends Base {
 		shoopingBagButton.click();
 
 //	BOLSASECTION() THROWS INTERRUPTEDEXCEPTION {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Bolsa_Da_Compras_Button"))))
-				.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Bolsa_Da_Compras_Button")))).click();
 		System.out.println("SHOOPING BAG SECTIONS PASS");
 
 //	PRECONOCIMIENTOS() THROWS INTERRUPTEDEXCEPTION {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Promotional_Checkbox"))))
-				.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Promotional_Checkbox")))).click();
 		System.out.println("BOLSA SECTION PASS");
 		WebElement continuarbutton = driver.findElement(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")));
 		js.executeScript("arguments[0].scrollIntoView(true);", continuarbutton);
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")))).click();
 		
 // INFORMACIONSECTION() THROWS INTERRUPTEDEXCEPTION {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		Thread.sleep(3000);
-		WebElement continueToPaymentButton = driver
-				.findElement(By.xpath(PE_loc.getProperty("Continue_With_Payment_Button")));
+		Thread.sleep(10000);
+		WebElement continueToPaymentButton = driver.findElement(By.xpath(PE_loc.getProperty("Continue_With_Payment_Button")));
 		wait.until(ExpectedConditions.visibilityOf(continueToPaymentButton));
 		System.out.println("RECONOCIMIENTOS SECTION PASS");
 		Thread.sleep(3000);
@@ -265,13 +258,9 @@ public class PE2 extends Base {
 
 // PAYMENTSECTION() THROWS INTERRUPTEDEXCEPTION {
 		Thread.sleep(5000);
-		wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Payment_Section_Checkbox1"))))
-				.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Payment_Section_Checkbox1")))).click();
 		System.out.println("INFORMACION SECTION PASS");
-		wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Payment_Section_Checkbox2"))))
-				.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Payment_Section_Checkbox2")))).click();
 		WebElement button = driver.findElement(By.xpath(PE_loc.getProperty("Credit_Card_Button")));
 		wait.until(ExpectedConditions.visibilityOf(button));
 		js.executeScript("arguments[0].scrollIntoView(true);", button);
@@ -293,15 +282,15 @@ public class PE2 extends Base {
 		String preMonth = month1.length() > 1 ? "" : "0"; // conditional statement & length function -> 3445 = 4 digit
 		driver.findElement(By.xpath(PE_loc.getProperty("Expiry_Date"))).sendKeys(preMonth + month1);
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(PE_loc.getProperty("Expiry_Date")))
-				.sendKeys("20" + (25 + (int) (Math.floor(Math.random() * 16))));
-		driver.findElement(By.xpath(PE_loc.getProperty("CVC")))
-				.sendKeys("" + (100 + (int) (Math.floor(Math.random() * 100))));
+		driver.findElement(By.xpath(PE_loc.getProperty("Expiry_Date"))).sendKeys("20" + (25 + (int) (Math.floor(Math.random() * 16))));
+		driver.findElement(By.xpath(PE_loc.getProperty("CVC"))).sendKeys("" + (100 + (int) (Math.floor(Math.random() * 100))));
 		driver.findElement(By.xpath(PE_loc.getProperty("First_Name"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		driver.findElement(By.xpath(PE_loc.getProperty("Last_Name"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		driver.findElement(By.xpath(PE_loc.getProperty("Pay_Button"))).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Order_Number_Message"))));
-
+		String ORDER_NUMBER = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Order_Number_Message")))).getText();
+		System.out.println("ORDER PLACED - PASS");
+		System.out.println(ORDER_NUMBER);
+		
 // SCREENSHOT() THROWS IOEXCEPTION {
 		Date currentdate = new Date();
 		String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);

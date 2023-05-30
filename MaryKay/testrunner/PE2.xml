@@ -7,7 +7,7 @@
   	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener></listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.PE2"/>
+      <class name="testcases.AMR.PE2"/>
     </classes>
   </test> <!-- Peru Functional Testing-->
 </suite> <!--Regreesion Suite -->

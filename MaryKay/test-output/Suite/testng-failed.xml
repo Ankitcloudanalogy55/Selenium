@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="common.RetryListener"/>
-    <listener class-name="common.Listeners"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.PE2">
+      <class name="testcases.AMR.PE2">
         <methods>
+          <include name="peruAgreement"/>
           <include name="closingBrowser"/>
           <include name="launchBrowser"/>
-          <include name="peruAgreement"/>
         </methods>
-      </class> <!-- testcases.PE2 -->
+      </class> <!-- testcases.AMR.PE2 -->
+      <class name="testcases.APR.PH">
+        <methods>
+          <include name="peruAgreement"/>
+          <include name="closingBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testcases.APR.PH -->
+      <class name="testcases.NAR.US">
+        <methods>
+          <include name="usAgreement"/>
+          <include name="closingBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testcases.NAR.US -->
+      <class name="testcases.AMR.BR">
+        <methods>
+          <include name="peruAgreement"/>
+          <include name="closingBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testcases.AMR.BR -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -7,7 +7,7 @@
   	<listener class-name="common.RetryListener"></listener></listeners>
   <test thread-count="5" name="FUnctional Testing">
     <classes>
-      <class name="testcases.US"/>
+      <class name="testcases.NAR.US"/>
     </classes>
   </test> <!--US Functional Testing -->
 </suite> <!-- Regreesion Suite -->

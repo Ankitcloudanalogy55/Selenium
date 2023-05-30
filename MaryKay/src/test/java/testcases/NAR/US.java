@@ -1,4 +1,4 @@
-package testcases;
+package testcases.NAR;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,19 +23,18 @@ import common.RetryAnalyzer;
 
 
 public class US extends Base {
-	public static String fakeMailWeb;
-	public static String mkWeb;
-	public static String verificationCode;
+	
 	
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public static void usAgreement() throws InterruptedException, IOException {
 
-// COMMON FUNCTIONS		      
+// COMMON 		      
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // IMPLICITLY WAIT
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100)); // EXPLICIT WAIT
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		Actions action = new Actions(driver);
+		String fakeMailWeb;
 
 // FAKEMAIL    
 		driver.get(config.getProperty("FAKE_MAIL_URL"));
@@ -169,7 +168,7 @@ public class US extends Base {
 // SHIPPING METHOD CONTINUE TO PAYMENT BUTTON
 		Thread.sleep(10000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("SHIPPING_HEADING"))));
-		System.out.println("CHECKOUT SECTION - - PASS");
+		System.out.println("CHECKOUT SECTION - PASS");
 		WebElement CONTINUETOPAYMENTBUTTON = driver.findElement(By.xpath(US_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
 		wait.until(ExpectedConditions.visibilityOf(CONTINUETOPAYMENTBUTTON));		
 		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON);
@@ -198,8 +197,9 @@ public class US extends Base {
 		driver.findElement(By.xpath(US_loc.getProperty("EXPIRY_YEAR_FIELD"))).sendKeys("" + (25 + (int) (Math.floor(Math.random() * 16))));
 		driver.findElement(By.xpath(US_loc.getProperty("CVV_FIELD"))).sendKeys("" + (100 + (int) (Math.floor(Math.random() * 100))));
 		driver.findElement(By.xpath(US_loc.getProperty("SUBMIT_PAYMENT_BUTTON"))).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("ORDER_NUMBER"))));
+		String ORDER_NUMBER = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("ORDER_NUMBER")))).getText();
 		System.out.println("ORDER PLACED - PASS");
+		System.out.println(ORDER_NUMBER);
 		
 // SCREENSHOT
 		Date currentdate = new Date();

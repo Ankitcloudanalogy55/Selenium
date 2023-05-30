@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="FUnctional Testing(failed)">
     <classes>
-      <class name="testcases.US">
+      <class name="testcases.NAR.US">
         <methods>
           <include name="usAgreement"/>
           <include name="closingBrowser"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testcases.US -->
+      </class> <!-- testcases.NAR.US -->
     </classes>
   </test> <!-- FUnctional Testing(failed) -->
 </suite> <!-- Failed suite [Regreesion Suite] -->

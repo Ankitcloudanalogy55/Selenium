@@ -58,14 +58,12 @@ public class Base {
 			System.out.println("BROWSER START");
 			
 		}
-		
 
-		
 		@AfterSuite
 		public void closingBrowser() throws InterruptedException {
-//			Thread.sleep(15000);
-//			driver.quit();
-//			System.out.println("BROWSER CLOSED");
+			Thread.sleep(15000);
+			driver.quit();
+			System.out.println("BROWSER CLOSED");
 		}
 	}
 
