@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.US">
+      <class name="testcases.AMR.BR">
         <methods>
-          <include name="usAgreement"/>
+          <include name="brazilAgreement"/>
           <include name="closingBrowser"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testcases.US -->
+      </class> <!-- testcases.AMR.BR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

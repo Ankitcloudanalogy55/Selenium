@@ -18,10 +18,8 @@ public class Base {
 		public static WebDriver driver;
 		public static Properties config = new Properties();
 		public static Properties PE_loc = new Properties();
-		public static Properties US_loc = new Properties();
-		public static FileReader fr;
-		public static FileReader fr1;
-			
+		public static Properties BR_loc = new Properties();
+		public static Properties US_loc = new Properties();		
 		
 		@BeforeSuite
 		public static void launchBrowser() throws IOException {
@@ -29,9 +27,11 @@ public class Base {
 			if(driver==null) {
 				FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
 				FileReader PE = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\PE_Locators.properties");
+				FileReader BR = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\BR_Locators.properties");
 				FileReader US = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\US_Locators.properties");
 				config.load(fr);
 				PE_loc.load(PE);
+				BR_loc.load(BR);
 				US_loc.load(US);
 			}
 			

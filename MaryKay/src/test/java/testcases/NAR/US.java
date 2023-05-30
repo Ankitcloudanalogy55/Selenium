@@ -71,8 +71,8 @@ public class US extends Base {
 // RESETPASSWORD
 		driver.findElement(By.xpath(US_loc.getProperty("VERIFICATION_CODE_FIELD"))).sendKeys(verificationCode);
 		System.out.println("RESET PASSWORD PAGE OPEN ");
-		driver.findElement(By.xpath(US_loc.getProperty("NEW_PASSWORD_FIELD"))).sendKeys(config.getProperty("Password"));
-		driver.findElement(By.xpath(US_loc.getProperty("VERIFY_NEW_PASSWORD_FIELD"))).sendKeys(config.getProperty("Password"));
+		driver.findElement(By.xpath(US_loc.getProperty("NEW_PASSWORD_FIELD"))).sendKeys(config.getProperty("PASSWORD"));
+		driver.findElement(By.xpath(US_loc.getProperty("VERIFY_NEW_PASSWORD_FIELD"))).sendKeys(config.getProperty("PASSWORD"));
 		driver.findElement(By.xpath(US_loc.getProperty("PASSWORD_SUBMIT_BUTTON"))).click();
 
 // PERSONAL SECTION		

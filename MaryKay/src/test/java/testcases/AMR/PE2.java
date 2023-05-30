@@ -31,9 +31,9 @@ public class PE2 extends Base {
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public static void peruAgreement() throws InterruptedException, IOException {
 //	COMMON
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
 		driver.manage().deleteAllCookies();
 
 // FAKE MAIL 	
@@ -102,9 +102,9 @@ public class PE2 extends Base {
 		Thread.sleep(5000);
 		System.out.println("RESET PASSWORD PAGE OPEN ");
 		driver.findElement(By.xpath(PE_loc.getProperty("Verification_Code_Field"))).sendKeys(verificationCode);
-		driver.findElement(By.xpath(PE_loc.getProperty("Password_Field"))).sendKeys(config.getProperty("Password"));
+		driver.findElement(By.xpath(PE_loc.getProperty("Password_Field"))).sendKeys(config.getProperty("PASSWORD"));
 		driver.findElement(By.xpath(PE_loc.getProperty("Confirm_Password_Field")))
-				.sendKeys(config.getProperty("Password"));
+				.sendKeys(config.getProperty("PASSWORD"));
 		driver.findElement(By.xpath(PE_loc.getProperty("Submit_Password_Button"))).click();
 
 //	RECRUITERSECTION PA
@@ -116,7 +116,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUE_BUTTON);
 		CONTINUE_BUTTON.click();
 
-//	IDENTIFICATIONSECTION() THROWS INTERRUPTEDEXCEPTION {
+//	IDENTIFICATION SECTION PASS
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(PE_loc.getProperty("Spinner"))));
 		System.out.println("RECRUITER SECTION PASS");
@@ -131,7 +131,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", IDENTIFCATION_CONTINUE_BUTTON);
 		IDENTIFCATION_CONTINUE_BUTTON.click();
 
-//	PERSONALSECTION() THROWS INTERRUPTEDEXCEPTION {
+//	PERSONAL SECTION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(PE_loc.getProperty("Spinner"))));
 		System.out.println("IDENTIFICATION SECTION PASS");
@@ -153,7 +153,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", PERSONAL_CONTINUE_BUTTON);
 		PERSONAL_CONTINUE_BUTTON.click();
 
-//	ADDRESSSECTION() THROWS INTERRUPTEDEXCEPTION {
+//	ADDRESS SECTION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("Spinner")));
 		System.out.println("PERSONAL SECTION PASS");
@@ -173,7 +173,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(PE_loc.getProperty("Continue_Button"))));
 		driver.findElement(By.xpath(PE_loc.getProperty("Continue_Button"))).click();
 
-// CONTACTSECTION() THROWS INTERRUPTEDEXCEPTION {
+// CONTACT SECTION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("Spinner")));
 		System.out.println("ADDRESS SECTION PASS");
@@ -186,7 +186,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(PE_loc.getProperty("Continue_Button"))));
 		driver.findElement(By.xpath(PE_loc.getProperty("Continue_Button"))).click();
 		
-// LEGALSECTION() THROWS INTERRUPTEDEXCEPTION {
+// LEGAL SECTION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(PE_loc.getProperty("Spinner"))));
 		System.out.println("ADDITONAL SECTION PASS");
@@ -203,7 +203,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(PE_loc.getProperty("Continue_Button"))));
 		driver.findElement(By.xpath(PE_loc.getProperty("Continue_Button"))).click();
 
-//	REVIEWSECTION() THROWS INTERRUPTEDEXCEPTION {
+//	REVIEW SECTION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(PE_loc.getProperty("Spinner"))));
 		System.out.println("LEGAL SECTION PASS");
@@ -216,7 +216,7 @@ public class PE2 extends Base {
 		driver.findElement(By.xpath(PE_loc.getProperty("Buy_Starter_Kit"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Send_Button")))).click();
 
-// STARTERKITSPAGE() THROWS INTERRUPTEDEXCEPTION {
+// STARTERKIT PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Commerce_Continue_Button"))));
 		System.out.println("REVIEW SECTION PASS");
@@ -227,7 +227,7 @@ public class PE2 extends Base {
 		action.moveToElement(checkbox1).click(checkbox1).perform();
 		driver.findElement(By.xpath(PE_loc.getProperty("Commerce_Continue_Button"))).click();
 
-//	SHOOPINGBAGSECTIONS() THROWS INTERRUPTEDEXCEPTION {
+// SHOOPING BAG SECTIONS
 		Thread.sleep(5000);
 		WebElement shoopingBagButton = driver.findElement((By.xpath(PE_loc.getProperty("Shooping_Bag_Button"))));
 		js.executeScript("arguments[0].scrollIntoView(true);", shoopingBagButton);
@@ -235,18 +235,18 @@ public class PE2 extends Base {
 		System.out.println("STARTER KIT SECTION PASS");
 		shoopingBagButton.click();
 
-//	BOLSASECTION() THROWS INTERRUPTEDEXCEPTION {
+// BOLSA SECTION
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Bolsa_Da_Compras_Button")))).click();
 		System.out.println("SHOOPING BAG SECTIONS PASS");
 
-//	PRECONOCIMIENTOS() THROWS INTERRUPTEDEXCEPTION {
+// PRE CONOCIMIENTOS
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Promotional_Checkbox")))).click();
 		System.out.println("BOLSA SECTION PASS");
 		WebElement continuarbutton = driver.findElement(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")));
 		js.executeScript("arguments[0].scrollIntoView(true);", continuarbutton);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")))).click();
 		
-// INFORMACIONSECTION() THROWS INTERRUPTEDEXCEPTION {
+// INFORMACION SECTION  
 		Thread.sleep(10000);
 		WebElement continueToPaymentButton = driver.findElement(By.xpath(PE_loc.getProperty("Continue_With_Payment_Button")));
 		wait.until(ExpectedConditions.visibilityOf(continueToPaymentButton));
@@ -256,7 +256,7 @@ public class PE2 extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", continueToPaymentButton);
 		continueToPaymentButton.click();
 
-// PAYMENTSECTION() THROWS INTERRUPTEDEXCEPTION {
+// PAYMENT SECTION
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Payment_Section_Checkbox1")))).click();
 		System.out.println("INFORMACION SECTION PASS");
@@ -267,7 +267,7 @@ public class PE2 extends Base {
 		Thread.sleep(3000);
 		button.click();
 
-// CREDITCARDSECTION() THROWS INTERRUPTEDEXCEPTION {
+// CREDIT CARD SECTION
 		Thread.sleep(15000);
 		driver.switchTo().frame(PE_loc.getProperty("IFrame"));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Payment_Method")))).click();
@@ -291,7 +291,7 @@ public class PE2 extends Base {
 		System.out.println("ORDER PLACED - PASS");
 		System.out.println(ORDER_NUMBER);
 		
-// SCREENSHOT() THROWS IOEXCEPTION {
+// SCREENSHOT
 		Date currentdate = new Date();
 		String screenshotfilename = currentdate.toString().replace(":", "-").replace(" ", "-").substring(4);
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -300,7 +300,7 @@ public class PE2 extends Base {
 		System.out.println("SCREENSHOT CAPTURE");
 		driver.switchTo().window(fakeMailWeb);
 
-// CONFIRMATIONMAIL() THROWS INTERRUPTEDEXCEPTION {
+// CONFIRMATION MAIL
 		driver.findElement(By.xpath(PE_loc.getProperty("Back_Button_Of_Fake_Mail"))).click();
 		System.out.println("FAKE MAIL WEB OPEN");
 //		wait.until(ExpectedConditions.visibilityOfElementPE_located(By.xpath(PE_loc.getProperty("Received_Mail")))).click();
