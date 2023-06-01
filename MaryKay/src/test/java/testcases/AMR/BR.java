@@ -139,7 +139,7 @@ public class BR extends Base {
 		System.out.println("PERSONAL SECTION - PASS");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("COMPLEMENTO"))));
 		driver.findElement(By.xpath(BR_loc.getProperty("POSTAL_CODE_FIELD"))).sendKeys("320");
-		driver.findElement(By.xpath(BR_loc.getProperty("a0e63000003oqxkAAA"))).click();
+		driver.findElement(By.xpath(BR_loc.getProperty("POSTAL_CODE"))).click();
 		driver.findElement(By.xpath(BR_loc.getProperty("NUMERO_FIELD"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		
 		driver.findElement(By.xpath(BR_loc.getProperty("COMPLEMENTO"))).sendKeys(RandomStringUtils.randomAlphabetic(10));

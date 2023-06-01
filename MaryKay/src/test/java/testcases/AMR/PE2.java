@@ -239,12 +239,13 @@ public class PE2 extends Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Bolsa_Da_Compras_Button")))).click();
 		System.out.println("SHOOPING BAG SECTIONS PASS");
 
-// PRE CONOCIMIENTOS
+/* PRE CONOCIMIENTOS
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Promotional_Checkbox")))).click();
 		System.out.println("BOLSA SECTION PASS");
 		WebElement continuarbutton = driver.findElement(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")));
 		js.executeScript("arguments[0].scrollIntoView(true);", continuarbutton);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Recognitions_Continue_Button")))).click();
+*/	
 		
 // INFORMACION SECTION  
 		Thread.sleep(10000);

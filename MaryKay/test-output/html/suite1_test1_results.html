@@ -74,7 +74,7 @@
 	  	  <tr>
 	    <th>Total Time : </th>
 	    <th></th>
-	    <th>00:05:10</th> 
+	    <th>00:01:48</th> 
 	  </tr>
 	  <tr>
 	    <th>Total Steps : </th>
@@ -84,7 +84,7 @@
 	  <tr>
 	    <th>Status : </th>
 	    <th></th>
-	    <th><font color="green">PASS</font></th> 
+	    <th><font color="red">FAIL</font></th> 
 	  </tr>
 	</table>
 </div>
@@ -109,30 +109,211 @@
 				
 				
 												
-				
-				
-												<tr>
-			<td class="time">1685440295773</td>
-			<td class="header passed" colspan="4" onClick="toggleElement('e4fc3756-1d7f-49e6-946b-ec3e43b9a5f9','block');changeSingleIcon('span-e4fc3756-1d7f-49e6-946b-ec3e43b9a5f9');" title="Click to expand/collapse" style="cursor: pointer;">
-			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.AMR.PE2</div>
-			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-e4fc3756-1d7f-49e6-946b-ec3e43b9a5f9' class="glyphicon glyphicon-menu-down"></span></div>
-			</td>
-			</tr>
-			<tr>
-	<td class="time">1685440295773</td>
+											<tr>
+	<td class="time">1685598874530</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('2f8524ac-9488-4f2d-a3cd-88f433b73e8a','block');changeSingleIcon('span-2f8524ac-9488-4f2d-a3cd-88f433b73e8a');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.AMR.PE2</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-2f8524ac-9488-4f2d-a3cd-88f433b73e8a' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1685598874530</td>
 	<td class="methodTest">
 		<span class="description"><b>Method: </b>peruAgreement</span><br>
 			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>310.507s</span><br>
+							<span class="duration"><b>Duration: </b>0.505s</span><br>
 	</td>
 	<td class="result">
-						<div class="stackTrace" id="e4fc3756-1d7f-49e6-946b-ec3e43b9a5f9" style="display: block;">
-												Method name is = peruAgreement<br>
-												Status of execution is = 1<br>
-								</td>
+						<div class="noCollapse" id="2f8524ac-9488-4f2d-a3cd-88f433b73e8a" style="display: block;">
+												Method name is = peruAgreement
+												<a href=C:\PROJECTS\MaryKay/screenshot/Jun-01-11-24-35-IST-2023.png>Fail Test Results</a>
+									<a href="javascript:toggleElement('exception-2f8524ac-9488-4f2d-a3cd-88f433b73e8a','block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [23a568b7d07d55a448ea89ce08376175, get {url=https://www.fakemail.net/}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54330}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54330/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 23a568b7d07d55a448ea89ce08376175</b></a><br/>
+		<div class="stackTrace" id="exception-2f8524ac-9488-4f2d-a3cd-88f433b73e8a">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)<br/>
+					testcases.AMR.PE2.peruAgreement(PE2.java:40)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
+					com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br/>
+						</div>
+		</td>
 	</div>
 </tr>
-					  
+						
+											<tr>
+	<td class="time">1685598872907</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('61d9bf63-a985-4895-a255-973cc9d13420','block');changeSingleIcon('span-61d9bf63-a985-4895-a255-973cc9d13420');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.AMR.PE2</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-61d9bf63-a985-4895-a255-973cc9d13420' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1685598872907</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>peruAgreement</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.456s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="61d9bf63-a985-4895-a255-973cc9d13420" style="display: block;">
+												Method name is = peruAgreement
+									<a href="javascript:toggleElement('exception-61d9bf63-a985-4895-a255-973cc9d13420','block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [0178b6cfc5b1e77d977c6c82462469b1, get {url=https://www.fakemail.net/}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54317}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54317/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 0178b6cfc5b1e77d977c6c82462469b1</b></a><br/>
+		<div class="stackTrace" id="exception-61d9bf63-a985-4895-a255-973cc9d13420">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)<br/>
+					testcases.AMR.PE2.peruAgreement(PE2.java:40)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
+					com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1685598767225</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('1c11e71d-c7d1-472d-a6e7-68c430a738e7','block');changeSingleIcon('span-1c11e71d-c7d1-472d-a6e7-68c430a738e7');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.AMR.PE2</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-1c11e71d-c7d1-472d-a6e7-68c430a738e7' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1685598767225</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>peruAgreement</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>104.634s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="1c11e71d-c7d1-472d-a6e7-68c430a738e7" style="display: block;">
+												Method name is = peruAgreement
+									<a href="javascript:toggleElement('exception-1c11e71d-c7d1-472d-a6e7-68c430a738e7','block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 97.417<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [7f3f1eb30c7c23a174e707cca712799b, get {url=https://amr1uat-mkamr-marykayintouch.cs43.force.com/pe/s/agreements-login?language=es_PE}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54110/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 7f3f1eb30c7c23a174e707cca712799b</b></a><br/>
+		<div class="stackTrace" id="exception-1c11e71d-c7d1-472d-a6e7-68c430a738e7">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)<br/>
+					testcases.AMR.PE2.peruAgreement(PE2.java:49)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:829)<br/>
+					org.testng.TestRunner.run(TestRunner.java:602)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
+					com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+			  
 	</tbody>
 	</table>
 </div>
