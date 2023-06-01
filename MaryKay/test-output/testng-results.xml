@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="5" ignored="4" total="12" passed="1" failed="2" skipped="0">
+<testng-results retried="1" ignored="0" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
@@ -8,53 +8,56 @@
       <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
     </line>
     <line>
-      <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
-    </line>
-    <line>
-      <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/May-31-14-41-38-IST-2023.png>Fail Test Results</a>]]>
-    </line>
-    <line>
-      <![CDATA[Method name is = peruAgreement]]>
-    </line>
-    <line>
-      <![CDATA[Method name is = peruAgreement]]>
-    </line>
-    <line>
-      <![CDATA[Method name is = peruAgreement]]>
-    </line>
-    <line>
-      <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/May-31-14-54-04-IST-2023.png>Fail Test Results</a>]]>
-    </line>
-    <line>
-      <![CDATA[Method name is = usAgreement]]>
-    </line>
-    <line>
-      <![CDATA[Method name is = usAgreement]]>
-    </line>
-    <line>
-      <![CDATA[Status of execution is = 1]]>
+      <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/Jun-01-17-09-21-IST-2023.png>Fail Test Results</a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-31T14:35:59 IST" name="Suite" finished-at="2023-05-31T15:02:03 IST" duration-ms="1563555">
+  <suite started-at="2023-06-01T17:05:09 IST" name="Suite" finished-at="2023-06-01T17:09:21 IST" duration-ms="251737">
     <groups>
     </groups>
-    <test started-at="2023-05-31T14:35:59 IST" name="Test" finished-at="2023-05-31T15:02:03 IST" duration-ms="1563555">
+    <test started-at="2023-06-01T17:05:09 IST" name="Test" finished-at="2023-06-01T17:09:21 IST" duration-ms="251737">
       <class name="testcases.AMR.BR">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.AMR.BR@306cf3ea]" started-at="2023-05-31T14:35:57 IST" name="launchBrowser" finished-at="2023-05-31T14:35:59 IST" duration-ms="2483" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.AMR.BR@75c56eb9]" started-at="2023-06-01T17:05:06 IST" name="launchBrowser" finished-at="2023-06-01T17:05:09 IST" duration-ms="3515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method retried="true" signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@306cf3ea]" started-at="2023-05-31T14:36:00 IST" name="BRAZIL_AGREEMENT" finished-at="2023-05-31T14:38:16 IST" duration-ms="136596" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method retried="true" signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@75c56eb9]" started-at="2023-06-01T17:05:09 IST" name="BRAZIL_AGREEMENT" finished-at="2023-06-01T17:07:27 IST" duration-ms="137308" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='2'][@type='tel']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [165f3db6a94038c5b1e84fbdd5719774, findElement {using=xpath, value=//input[@name='2'][@type='tel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57348/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 165f3db6a94038c5b1e84fbdd5719774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-at org.openqa.selenium.By$ByXPath.<init>(By.java:287)
-at org.openqa.selenium.By.xpath(By.java:89)
-at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:142)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='2'][@type='tel']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [165f3db6a94038c5b1e84fbdd5719774, findElement {using=xpath, value=//input[@name='2'][@type='tel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57348/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 165f3db6a94038c5b1e84fbdd5719774
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:154)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -83,23 +86,50 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
             </line>
           </reporter-output>
         </test-method> <!-- BRAZIL_AGREEMENT -->
-        <test-method retried="true" signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@306cf3ea]" started-at="2023-05-31T14:38:17 IST" name="BRAZIL_AGREEMENT" finished-at="2023-05-31T14:39:57 IST" duration-ms="99879" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@75c56eb9]" started-at="2023-06-01T17:07:28 IST" name="BRAZIL_AGREEMENT" finished-at="2023-06-01T17:09:21 IST" duration-ms="112926" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-record-id='a0e63000003oqxkAAA']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96ec1a0e73ab11c037dd33d04eb4e3e6, findElement {using=xpath, value=//div[@data-record-id='a0e63000003oqxkAAA']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57530/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96ec1a0e73ab11c037dd33d04eb4e3e6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-at org.openqa.selenium.By$ByXPath.<init>(By.java:287)
-at org.openqa.selenium.By.xpath(By.java:89)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-record-id='a0e63000003oqxkAAA']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96ec1a0e73ab11c037dd33d04eb4e3e6, findElement {using=xpath, value=//div[@data-record-id='a0e63000003oqxkAAA']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57530/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96ec1a0e73ab11c037dd33d04eb4e3e6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:142)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -129,304 +159,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BRAZIL_AGREEMENT -->
-        <test-method signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@306cf3ea]" started-at="2023-05-31T14:39:58 IST" name="BRAZIL_AGREEMENT" finished-at="2023-05-31T14:41:38 IST" duration-ms="99560" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-at org.openqa.selenium.By$ByXPath.<init>(By.java:287)
-at org.openqa.selenium.By.xpath(By.java:89)
-at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:142)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
             </line>
             <line>
-              <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/May-31-14-41-38-IST-2023.png>Fail Test Results</a>]]>
+              <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/Jun-01-17-09-21-IST-2023.png>Fail Test Results</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- BRAZIL_AGREEMENT -->
-        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testcases.AMR.BR@306cf3ea]" started-at="2023-05-31T15:02:03 IST" name="closingBrowser" finished-at="2023-05-31T15:02:19 IST" duration-ms="16256" status="PASS">
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testcases.AMR.BR@75c56eb9]" started-at="2023-06-01T17:09:21 IST" name="closingBrowser" finished-at="2023-06-01T17:09:37 IST" duration-ms="16166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingBrowser -->
       </class> <!-- testcases.AMR.BR -->
-      <class name="testcases.NAR.US">
-        <test-method retried="true" signature="usAgreement()[pri:0, instance:testcases.NAR.US@29647f75]" started-at="2023-05-31T14:54:04 IST" name="usAgreement" finished-at="2023-05-31T14:56:36 IST" duration-ms="152195" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[2]/div[3]/div[2]/div[1]/div/table/tbody/tr[1][@data-href='2'][@class='hidden-xs hidden-sm klikaciRadek newMail'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08b9878f4a8497d1256f81cb297dbe5d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[2]/div[3]/div[2]/div[1]/div/table/tbody/tr[1][@data-href='2'][@class='hidden-xs hidden-sm klikaciRadek newMail'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08b9878f4a8497d1256f81cb297dbe5d
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at testcases.NAR.US.usAgreement(US.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = usAgreement]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- usAgreement -->
-        <test-method signature="usAgreement()[pri:0, instance:testcases.NAR.US@29647f75]" started-at="2023-05-31T14:56:37 IST" name="usAgreement" finished-at="2023-05-31T15:02:03 IST" duration-ms="326019" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = usAgreement]]>
-            </line>
-            <line>
-              <![CDATA[Status of execution is = 1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- usAgreement -->
-      </class> <!-- testcases.NAR.US -->
-      <class name="testcases.AMR.PE2">
-        <test-method retried="true" signature="peruAgreement()[pri:0, instance:testcases.AMR.PE2@355ce81c]" started-at="2023-05-31T14:41:38 IST" name="peruAgreement" finished-at="2023-05-31T14:43:53 IST" duration-ms="135341" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type='text'][@id='input-3'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62432/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20edade8638ff8abf0bdca0f933925c3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type='text'][@id='input-3'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62432/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20edade8638ff8abf0bdca0f933925c3
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at testcases.AMR.PE2.peruAgreement(PE2.java:87)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = peruAgreement]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- peruAgreement -->
-        <test-method retried="true" signature="peruAgreement()[pri:0, instance:testcases.AMR.PE2@355ce81c]" started-at="2023-05-31T14:43:54 IST" name="peruAgreement" finished-at="2023-05-31T14:49:06 IST" duration-ms="311773" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //label[@for='opt-out-checkbox-redeemable-promo-group-1'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62742/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e80a89646862a688926e7855162ec1a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //label[@for='opt-out-checkbox-redeemable-promo-group-1'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62742/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e80a89646862a688926e7855162ec1a
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at testcases.AMR.PE2.peruAgreement(PE2.java:243)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = peruAgreement]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- peruAgreement -->
-        <test-method signature="peruAgreement()[pri:0, instance:testcases.AMR.PE2@355ce81c]" started-at="2023-05-31T14:49:07 IST" name="peruAgreement" finished-at="2023-05-31T14:54:04 IST" duration-ms="296523" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //label[@for='opt-out-checkbox-redeemable-promo-group-1'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08b9878f4a8497d1256f81cb297dbe5d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //label[@for='opt-out-checkbox-redeemable-promo-group-1'] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08b9878f4a8497d1256f81cb297dbe5d
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at testcases.AMR.PE2.peruAgreement(PE2.java:243)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = peruAgreement]]>
-            </line>
-            <line>
-              <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/May-31-14-54-04-IST-2023.png>Fail Test Results</a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- peruAgreement -->
-      </class> <!-- testcases.AMR.PE2 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

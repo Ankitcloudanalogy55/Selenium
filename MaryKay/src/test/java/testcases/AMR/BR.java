@@ -26,7 +26,7 @@ public class BR extends Base {
 	public static String fakeMailWeb;
 	public static String mkWeb;
 	public static String verificationCode;
-	public static String[] consultantID = {  "HK2746", "EH1141" };
+	public static String[] consultantID = {"HK2746","EH1141"};
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public static void BRAZIL_AGREEMENT() throws InterruptedException, IOException {
@@ -72,7 +72,7 @@ public class BR extends Base {
 				driver.findElement(By.xpath(BR_loc.getProperty("REGISTER_BUTTON"))).click();
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("VERIFICATION_CODE_FIELD"))));
 				driver.switchTo().window(fakeMailWeb);
-				System.out.println("BACK TO FAKE MAIL WEB");
+				System.out.println("BACK TO FAKE MAIL WEB - PASS");
 			}
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("RECRUITER_NAME"))));
@@ -86,7 +86,7 @@ public class BR extends Base {
 			driver.findElement(By.xpath(BR_loc.getProperty("REGISTER_BUTTON"))).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("VERIFICATION_CODE_FIELD"))));
 			driver.switchTo().window(fakeMailWeb);
-			System.out.println("BACK TO FAKE MAIL WEB");
+			System.out.println("BACK TO FAKE MAIL WEB - PASS");
 		}
 
 // VERIFICATION CODE PAGE
@@ -95,12 +95,12 @@ public class BR extends Base {
 		// OPEN(switch to) I-FRAME and COPY VERIFICATION CODE
 		driver.switchTo().frame("iframeMail");
 		verificationCode = driver.findElement(By.xpath(BR_loc.getProperty("VERIFICATION_CODE"))).getText();
-		System.out.println("VERIFICATION CODE COPIED ");
+		System.out.println("VERIFICATION CODE COPIED - PASS");
 		driver.switchTo().window(mkWeb);
 
 //  RESETPASSWORD() THROWS INTERRUPTEDEXCEPTION {
 		Thread.sleep(5000);
-		System.out.println("RESET PASSWORD PAGE OPEN ");
+		System.out.println("RESET PASSWORD PAGE OPEN - PASS");
 		driver.findElement(By.xpath(BR_loc.getProperty("VERIFICATION_CODE_FIELD"))).sendKeys(verificationCode);
 		driver.findElement(By.xpath(BR_loc.getProperty("PASSWORD_FIELD"))).sendKeys(config.getProperty("PASSWORD"));
 		driver.findElement(By.xpath(BR_loc.getProperty("CONFIRM_PASSWORD_FIELD"))).sendKeys(config.getProperty("PASSWORD"));
@@ -119,7 +119,7 @@ public class BR extends Base {
 //	PERSONAL INFORMATION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BR_loc.getProperty("SPINNER"))));
-		System.out.println("SIGNUP SUCCESSFULLY");
+		System.out.println("SIGNUP SUCCESSFULLY - PASS");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("DATE_OF_BIRTH"))));
 		driver.findElement(By.xpath(BR_loc.getProperty("NOME"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		driver.findElement(By.xpath(BR_loc.getProperty("DATE_OF_BIRTH"))).click();
@@ -140,8 +140,7 @@ public class BR extends Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("COMPLEMENTO"))));
 		driver.findElement(By.xpath(BR_loc.getProperty("POSTAL_CODE_FIELD"))).sendKeys("320");
 		driver.findElement(By.xpath(BR_loc.getProperty("POSTAL_CODE"))).click();
-		driver.findElement(By.xpath(BR_loc.getProperty("NUMERO_FIELD"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
-		
+		driver.findElement(By.xpath(BR_loc.getProperty("NUMERO_FIELD"))).sendKeys(RandomStringUtils.randomNumeric(5));
 		driver.findElement(By.xpath(BR_loc.getProperty("COMPLEMENTO"))).sendKeys(RandomStringUtils.randomAlphabetic(10));
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(BR_loc.getProperty("CONTINUE_BUTTON"))));
 		driver.findElement(By.xpath(BR_loc.getProperty("CONTINUE_BUTTON"))).click();
@@ -149,30 +148,32 @@ public class BR extends Base {
 // CONTACT INFORMATION PAGE
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("SPINNER")));
-		System.out.println("ADDRESS SECTION PASS");
-		driver.findElement(By.xpath(BR_loc.getProperty("Home_Phone"))).sendKeys(RandomStringUtils.randomNumeric(9));
-		driver.findElement(By.xpath(BR_loc.getProperty("Cell_Phone"))).sendKeys("9" + RandomStringUtils.randomNumeric(8));
-		driver.findElement(By.xpath(BR_loc.getProperty("Office_Phone"))).sendKeys(RandomStringUtils.randomNumeric(9));
-		List<WebElement> elements = driver.findElements(By.xpath(BR_loc.getProperty("Radio_Button")));
+		System.out.println("ADDRESS SECTION - PASS");
+		driver.findElement(By.xpath(BR_loc.getProperty("HOME_PHONE"))).sendKeys(RandomStringUtils.randomNumeric(11));
+		driver.findElement(By.xpath(BR_loc.getProperty("CELL_PHONE"))).sendKeys(RandomStringUtils.randomNumeric(10));
+//		driver.findElement(By.xpath(BR_loc.getProperty("Office_Phone"))).sendKeys(RandomStringUtils.randomNumeric(9));
+		List<WebElement> elements = driver.findElements(By.xpath(BR_loc.getProperty("RADIO_BUTTON")));
 		elements.get(1).click();
-		driver.findElement(By.xpath(BR_loc.getProperty("Checkbox"))).click();
-		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(BR_loc.getProperty("Continue_Button"))));
+		driver.findElement(By.xpath(BR_loc.getProperty("CHECKBOX"))).click();
+		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(BR_loc.getProperty("CONTINUE_BUTTON"))));
 		driver.findElement(By.xpath(BR_loc.getProperty("CONTINUE_BUTTON"))).click();		
 
 //	IDENTIFICATIONSECTION() THROWS INTERRUPTEDEXCEPTION {
 			Thread.sleep(5000);
-			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BR_loc.getProperty("Spinner"))));
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BR_loc.getProperty("SPINNER"))));
 			System.out.println("ADDRESS SECTION - PASS");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("Documento_Identidad"))))
-					.sendKeys(RandomStringUtils.randomNumeric(8));
-			driver.findElement(By.xpath(BR_loc.getProperty("Nacionalidad"))).click();
-			driver.findElement(By.xpath(BR_loc.getProperty("Tipo_Doc_Identidad"))).click();
-			driver.findElement(By.xpath(BR_loc.getProperty("Comprobante_de_pago"))).click();
-			driver.findElement(By.xpath(BR_loc.getProperty("Numero_de_identificacion")))
-					.sendKeys("15" + RandomStringUtils.randomNumeric(9));
-			WebElement IDENTIFCATION_CONTINUE_BUTTON = driver.findElement(By.xpath(BR_loc.getProperty("Continue_Button")));
-			js.executeScript("arguments[0].scrollIntoView(true);", IDENTIFCATION_CONTINUE_BUTTON);
-			IDENTIFCATION_CONTINUE_BUTTON.click();
+			driver.switchTo().newWindow(WindowType.TAB);
+			driver.get(config.getProperty("CPF_GENERATOR_URL"));
+			List <WebElement> APPLY_MASK_CHECKBOX = driver.findElements(By.xpath(config.getProperty("APPLY_MASK_CHECKBOX")));
+			APPLY_MASK_CHECKBOX.get(0).click();
+			List <WebElement> GENERATE_BUTTON = driver.findElements(By.xpath(config.getProperty("GENERATE_BUTTON")));
+			GENERATE_BUTTON.get(0).click();
+			List <WebElement> CPF = driver.findElements(By.xpath(config.getProperty("CPF")));
+			String  CPF_NUMBER = CPF.get(0).getText();			
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("CPF")))).sendKeys(CPF_NUMBER);
+			driver.findElement(By.xpath(BR_loc.getProperty("NACIONALIDAD"))).click();
+			driver.findElement(By.xpath(BR_loc.getProperty("RG_RNE"))).sendKeys(CPF_NUMBER);
+			driver.findElement(By.xpath(BR_loc.getProperty("CONTINUE_BUTTON"))).click();
 			
 // LEGALSECTION() THROWS INTERRUPTEDEXCEPTION {
 		Thread.sleep(5000);

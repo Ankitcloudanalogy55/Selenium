@@ -8,20 +8,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.AMR.PE2">
-        <methods>
-          <include name="peruAgreement"/>
-          <include name="closingBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- testcases.AMR.PE2 -->
-      <class name="testcases.NAR.US">
-        <methods>
-          <include name="usAgreement"/>
-          <include name="closingBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- testcases.NAR.US -->
       <class name="testcases.AMR.BR">
         <methods>
           <include name="BRAZIL_AGREEMENT"/>

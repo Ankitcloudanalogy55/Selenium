@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\PROJECTS\MaryKay\new.xml</span>
+                    <span>C:\PROJECTS\MaryKay\testrunner\BR.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,  5 skipped,  1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,11 +105,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.AMR.BR" class="method navigator-link" hash-for-method="BRAZIL_AGREEMENT">BRAZIL_AGREEMENT</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.AMR.PE2" class="method navigator-link" hash-for-method="peruAgreement">peruAgreement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -126,41 +121,7 @@
                         <a href="#" panel-name="suite-Suite" title="testcases.AMR.BR" class="method navigator-link" hash-for-method="BRAZIL_AGREEMENT">BRAZIL_AGREEMENT</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.AMR.BR" class="method navigator-link" hash-for-method="BRAZIL_AGREEMENT">BRAZIL_AGREEMENT</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.AMR.PE2" class="method navigator-link" hash-for-method="peruAgreement">peruAgreement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.AMR.PE2" class="method navigator-link" hash-for-method="peruAgreement">peruAgreement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.NAR.US" class="method navigator-link" hash-for-method="usAgreement">usAgreement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.NAR.US" class="method navigator-link" hash-for-method="usAgreement">usAgreement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -175,33 +136,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases.AMR.PE2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="peruAgreement">
-                  </a> <!-- peruAgreement -->
-                  <span class="method-name">peruAgreement</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //label[@for=&apos;opt-out-checkbox-redeemable-promo-group-1&apos;] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08b9878f4a8497d1256f81cb297dbe5d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at testcases.AMR.PE2.peruAgreement(PE2.java:243)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">testcases.AMR.BR</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -210,91 +144,34 @@ Session ID: 08b9878f4a8497d1256f81cb297dbe5d
                   <a name="BRAZIL_AGREEMENT">
                   </a> <!-- BRAZIL_AGREEMENT -->
                   <span class="method-name">BRAZIL_AGREEMENT</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:287)
-	at org.openqa.selenium.By.xpath(By.java:89)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-record-id=&apos;a0e63000003oqxkAAA&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96ec1a0e73ab11c037dd33d04eb4e3e6, findElement {using=xpath, value=//div[@data-record-id=&apos;a0e63000003oqxkAAA&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57530/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96ec1a0e73ab11c037dd33d04eb4e3e6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:142)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testcases.AMR.PE2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="peruAgreement">
-                  </a> <!-- peruAgreement -->
-                  <span class="method-name">peruAgreement</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //label[@for=&apos;opt-out-checkbox-redeemable-promo-group-1&apos;] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62742/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e80a89646862a688926e7855162ec1a
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at testcases.AMR.PE2.peruAgreement(PE2.java:243)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="peruAgreement">
-                  </a> <!-- peruAgreement -->
-                  <span class="method-name">peruAgreement</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type=&apos;text&apos;][@id=&apos;input-3&apos;] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62432/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20edade8638ff8abf0bdca0f933925c3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at testcases.AMR.PE2.peruAgreement(PE2.java:87)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testcases.NAR.US</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="usAgreement">
-                  </a> <!-- usAgreement -->
-                  <span class="method-name">usAgreement</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[2]/div[3]/div[2]/div[1]/div/table/tbody/tr[1][@data-href=&apos;2&apos;][@class=&apos;hidden-xs hidden-sm klikaciRadek newMail&apos;] (tried for 100 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63083/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 08b9878f4a8497d1256f81cb297dbe5d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at testcases.NAR.US.usAgreement(US.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -306,52 +183,38 @@ Session ID: 08b9878f4a8497d1256f81cb297dbe5d
                   <a name="BRAZIL_AGREEMENT">
                   </a> <!-- BRAZIL_AGREEMENT -->
                   <span class="method-name">BRAZIL_AGREEMENT</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:287)
-	at org.openqa.selenium.By.xpath(By.java:89)
-	at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:142)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;2&apos;][@type=&apos;tel&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [165f3db6a94038c5b1e84fbdd5719774, findElement {using=xpath, value=//input[@name=&apos;2&apos;][@type=&apos;tel&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57348/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 165f3db6a94038c5b1e84fbdd5719774
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:154)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BRAZIL_AGREEMENT">
-                  </a> <!-- BRAZIL_AGREEMENT -->
-                  <span class="method-name">BRAZIL_AGREEMENT</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:287)
-	at org.openqa.selenium.By.xpath(By.java:89)
-	at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:142)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.NAR.US</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="usAgreement">
-                  </a> <!-- usAgreement -->
-                  <span class="method-name">usAgreement</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\PROJECTS\MaryKay\new.xml</span>
+            <span class="header-content">C:\PROJECTS\MaryKay\testrunner\BR.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -366,8 +229,6 @@ Session ID: 08b9878f4a8497d1256f81cb297dbe5d
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.AMR.BR&quot;/&gt;
-      &lt;class name=&quot;testcases.AMR.PE2&quot;/&gt;
-      &lt;class name=&quot;testcases.NAR.US&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -381,7 +242,7 @@ Session ID: 08b9878f4a8497d1256f81cb297dbe5d
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -407,44 +268,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'usAgreement')
-data.setCell(0, 2, 'testcases.NAR.US')
-data.setCell(0, 3, 326019);
+data.setCell(0, 1, 'BRAZIL_AGREEMENT')
+data.setCell(0, 2, 'testcases.AMR.BR')
+data.setCell(0, 3, 137308);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'peruAgreement')
-data.setCell(1, 2, 'testcases.AMR.PE2')
-data.setCell(1, 3, 311773);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'peruAgreement')
-data.setCell(2, 2, 'testcases.AMR.PE2')
-data.setCell(2, 3, 296523);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'usAgreement')
-data.setCell(3, 2, 'testcases.NAR.US')
-data.setCell(3, 3, 152195);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'BRAZIL_AGREEMENT')
-data.setCell(4, 2, 'testcases.AMR.BR')
-data.setCell(4, 3, 136596);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'peruAgreement')
-data.setCell(5, 2, 'testcases.AMR.PE2')
-data.setCell(5, 3, 135341);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'BRAZIL_AGREEMENT')
-data.setCell(6, 2, 'testcases.AMR.BR')
-data.setCell(6, 3, 99879);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'BRAZIL_AGREEMENT')
-data.setCell(7, 2, 'testcases.AMR.BR')
-data.setCell(7, 3, 99560);
+data.setCell(1, 1, 'BRAZIL_AGREEMENT')
+data.setCell(1, 2, 'testcases.AMR.BR')
+data.setCell(1, 3, 112926);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -456,81 +293,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">usAgreement</span>
+              <span class="reporter-method-name">BRAZIL_AGREEMENT</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = usAgreement</span>
-                <span class="reporter-method-output">Status of execution is = 1</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">peruAgreement</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = peruAgreement</span>
-                <span class="reporter-method-output"><a href=C:\PROJECTS\MaryKay/screenshot/May-31-14-54-04-IST-2023.png>Fail Test Results</a></span>
+                <span class="reporter-method-output">Method name is = BRAZIL_AGREEMENT</span>
+                <span class="reporter-method-output"><a href=C:\PROJECTS\MaryKay/screenshot/Jun-01-17-09-21-IST-2023.png>Fail Test Results</a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">BRAZIL_AGREEMENT</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Method name is = BRAZIL_AGREEMENT</span>
-                <span class="reporter-method-output"><a href=C:\PROJECTS\MaryKay/screenshot/May-31-14-41-38-IST-2023.png>Fail Test Results</a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">BRAZIL_AGREEMENT</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = BRAZIL_AGREEMENT</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">peruAgreement</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = peruAgreement</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">BRAZIL_AGREEMENT</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = BRAZIL_AGREEMENT</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">usAgreement</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = usAgreement</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">peruAgreement</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method name is = peruAgreement</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.AMR.PE2</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">closingBrowser</span>
-                <br/>
-                <span class="ignored-method-name">launchBrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.NAR.US</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">closingBrowser</span>
-                <br/>
-                <span class="ignored-method-name">launchBrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -546,52 +327,17 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">BRAZIL_AGREEMENT</span>
-                <span class="method-start">2516 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">BRAZIL_AGREEMENT</span>
-                <span class="method-start">140184 ms</span>
+                <span class="method-start">3563 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">BRAZIL_AGREEMENT</span>
-                <span class="method-start">241067 ms</span>
+                <span class="method-start">142141 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.AMR.PE2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">peruAgreement</span>
-                <span class="method-start">340788 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">peruAgreement</span>
-                <span class="method-start">477050 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">peruAgreement</span>
-                <span class="method-start">790081 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.NAR.US</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">usAgreement</span>
-                <span class="method-start">1086791 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">usAgreement</span>
-                <span class="method-start">1240016 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.AMR.BR</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closingBrowser</span>
-                <span class="method-start">1566100 ms</span>
+                <span class="method-start">255301 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
