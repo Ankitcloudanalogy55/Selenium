@@ -40,7 +40,7 @@ public class US extends Base {
 		driver.get(config.getProperty("FAKE_MAIL_URL"));
 		System.out.println("FAKE MAIL WEB - PASS");
 		fakeMailWeb = driver.getWindowHandle();
-		driver.findElement(By.xpath(US_loc.getProperty("COPY_MAIL_BUTTON"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("MAIL"))));
 		String Mail = driver.findElement(By.xpath(US_loc.getProperty("MAIL"))).getText();
 		driver.switchTo().newWindow(WindowType.TAB);
 		System.out.println("MAIL COPIED: " + Mail);
@@ -53,7 +53,7 @@ public class US extends Base {
 		WebElement email = driver.findElement(By.xpath(US_loc.getProperty("BY_EMAIL_RADIO_BUTTON")));
 		js.executeScript("arguments[0].scrollIntoView(true);", email);
 		email.click();
-		driver.findElement(By.xpath(US_loc.getProperty("EMAIL_FIELD"))).sendKeys(Keys.CONTROL + "V");
+		driver.findElement(By.xpath(US_loc.getProperty("EMAIL_FIELD"))).sendKeys(Mail);
 		js.executeScript("window.scroll(0,800)", "");
 		driver.findElement(By.xpath(US_loc.getProperty("SIGNUP_BUTTON"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("VERIFICATION_CODE_FIELD"))));
@@ -169,12 +169,15 @@ public class US extends Base {
 		Thread.sleep(10000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(US_loc.getProperty("SHIPPING_HEADING"))));
 		System.out.println("CHECKOUT SECTION - PASS");
-		WebElement CONTINUETOPAYMENTBUTTON = driver.findElement(By.xpath(US_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
-		wait.until(ExpectedConditions.visibilityOf(CONTINUETOPAYMENTBUTTON));		
-		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON);
-//		driver.findElement(By.xpath(US_loc.getProperty("PANEL"))).click();
-		CONTINUETOPAYMENTBUTTON.click();
-
+		List <WebElement> CONTINUETOPAYMENTBUTTON = driver.findElements(By.xpath(US_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
+		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON.get(0));
+		Thread.sleep(10000);
+//		driver.switchTo().frame("DW-SFToolkit");
+//		action.click(driver.findElement(By.xpath(US_loc.getProperty("PANEL"))));
+//		driver.switchTo().parentFrame();
+//		action.click(CONTINUETOPAYMENTBUTTON.get(0));
+		driver.findElement(By.xpath(US_loc.getProperty("PAYMENT_BUTTON"))).click();
+		
 // PAYMENT SECTION
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(US_loc.getProperty("PAYMENT_PAGE_CHECKBOX"))).click();
@@ -184,6 +187,8 @@ public class US extends Base {
 		js.executeScript("arguments[0].scrollIntoView(true);", PAYMENT_BUTTON);
 		Thread.sleep(2000);
 		PAYMENT_BUTTON.click();
+
+
 
 // CREDITCARDSECTION
 		Thread.sleep(15000);
