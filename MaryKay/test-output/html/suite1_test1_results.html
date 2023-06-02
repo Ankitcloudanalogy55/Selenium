@@ -29,7 +29,7 @@
 	    		<span class="tooltiptextCustom">Copy Test name</span>
 			</div>
 	    </th>
-	    <th id="testNameId">FUnctional Testing</th> 
+	    <th id="testNameId">Test</th> 
 	  </tr>
 	  <tr>
 	    <th>Test Class : </th>
@@ -43,8 +43,8 @@
 	    		<span class="tooltiptextCustom">Copy Class name</span>
 			</div>
 	    </th> 
-	    <th id="testClassId">testcases.NAR.US</th>
-	    <th id="testClassNameId" hidden="true">US</th>
+	    <th id="testClassId">testcases.AMR.BR</th>
+	    <th id="testClassNameId" hidden="true">BR</th>
 	  </tr>
 	  <tr>
 	    <th>Suite Name : </th>
@@ -54,7 +54,7 @@
 	    		<span class="tooltiptextCustom">Copy Suite name</span>
 			</div>
 		</th>
-	    <th id="suiteNameId">Regreesion Suite</th>
+	    <th id="suiteNameId">Suite</th>
 	  </tr>
 	  <tr>
 	    <th>Suite XML : </th>
@@ -68,13 +68,13 @@
 	    		<span class="tooltiptextCustom">Copy Suite file name</span>
 			</div>
 	    </th> 
-	  	<th id="suiteXMLId">C:\PROJECTS\MaryKay\testrunner\US.xml</th>
-	  	<th id="suiteXMLNameId" hidden="true">US.xml</th>
+	  	<th id="suiteXMLId">C:\PROJECTS\MaryKay\testrunner\BR.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">BR.xml</th>
 	  </tr>
 	  	  <tr>
 	    <th>Total Time : </th>
 	    <th></th>
-	    <th>00:04:37</th> 
+	    <th>00:07:21</th> 
 	  </tr>
 	  <tr>
 	    <th>Total Steps : </th>
@@ -84,7 +84,7 @@
 	  <tr>
 	    <th>Status : </th>
 	    <th></th>
-	    <th><font color="green">PASS</font></th> 
+	    <th><font color="red">FAIL</font></th> 
 	  </tr>
 	</table>
 </div>
@@ -109,30 +109,156 @@
 				
 				
 												
-				
-				
-												<tr>
-			<td class="time">1685696762710</td>
-			<td class="header passed" colspan="4" onClick="toggleElement('3bfd1608-bcef-4b3b-af96-4b17ad7d1d93','block');changeSingleIcon('span-3bfd1608-bcef-4b3b-af96-4b17ad7d1d93');" title="Click to expand/collapse" style="cursor: pointer;">
-			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.NAR.US</div>
-			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-3bfd1608-bcef-4b3b-af96-4b17ad7d1d93' class="glyphicon glyphicon-menu-down"></span></div>
-			</td>
-			</tr>
-			<tr>
-	<td class="time">1685696762710</td>
+											<tr>
+	<td class="time">1685704439827</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('9985355c-63bb-4813-8d6a-519955ce1183','block');changeSingleIcon('span-9985355c-63bb-4813-8d6a-519955ce1183');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.AMR.BR</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-9985355c-63bb-4813-8d6a-519955ce1183' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1685704439827</td>
 	<td class="methodTest">
-		<span class="description"><b>Method: </b>usAgreement</span><br>
+		<span class="description"><b>Method: </b>BRAZIL_AGREEMENT</span><br>
 			<span class="description"><b>Description: </b></span><br>
-							<span class="duration"><b>Duration: </b>277.776s</span><br>
+							<span class="duration"><b>Duration: </b>214.859s</span><br>
 	</td>
 	<td class="result">
-						<div class="stackTrace" id="3bfd1608-bcef-4b3b-af96-4b17ad7d1d93" style="display: block;">
-												Method name is = usAgreement<br>
-												Status of execution is = 1<br>
-								</td>
+						<div class="noCollapse" id="9985355c-63bb-4813-8d6a-519955ce1183" style="display: block;">
+												Method name is = BRAZIL_AGREEMENT
+												<a href=C:\PROJECTS\MaryKay/screenshot/Jun-02-16-47-34-IST-2023.png>Fail Test Results</a>
+									<a href="javascript:toggleElement('exception-9985355c-63bb-4813-8d6a-519955ce1183','block')" title="Click to expand/collapse"><b>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //button[@data-action=&apos;/on/demandware.store/Sites-marykayintouch-br-Site/pt_BR/Checkout-SubmitBonuses&apos;]] because of the following error:<br/>
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//button[@data-action=&apos;/on/demandware.store/Sites-marykayintouch-br-Site/pt_BR/Checkout-SubmitBonuses&apos;]]&apos; is not a valid XPath expression.<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [6fa4ffc0fab60ae725d62c03b24f0356, findElement {using=xpath, value=//button[@data-action=&apos;/on/demandware.store/Sites-marykayintouch-br-Site/pt_BR/Checkout-SubmitBonuses&apos;]]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60002/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 6fa4ffc0fab60ae725d62c03b24f0356</b></a><br/>
+		<div class="stackTrace" id="exception-9985355c-63bb-4813-8d6a-519955ce1183">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:239)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br/>
+					org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)<br/>
+					org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)<br/>
+					org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:794)<br/>
+					org.testng.TestRunner.run(TestRunner.java:596)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
 	</div>
 </tr>
-					  
+						
+											<tr>
+	<td class="time">1685704213073</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('4c4bd9ca-ccc3-4c7b-9c87-a7bc59a93126','block');changeSingleIcon('span-4c4bd9ca-ccc3-4c7b-9c87-a7bc59a93126');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testcases.AMR.BR</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-4c4bd9ca-ccc3-4c7b-9c87-a7bc59a93126' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1685704213073</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>BRAZIL_AGREEMENT</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>225.384s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="4c4bd9ca-ccc3-4c7b-9c87-a7bc59a93126" style="display: block;">
+												Method name is = BRAZIL_AGREEMENT
+									<a href="javascript:toggleElement('exception-4c4bd9ca-ccc3-4c7b-9c87-a7bc59a93126','block')" title="Click to expand/collapse"><b>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //button[@data-action=&apos;/on/demandware.store/Sites-marykayintouch-br-Site/pt_BR/Checkout-SubmitBonuses&apos;]] because of the following error:<br/>
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//button[@data-action=&apos;/on/demandware.store/Sites-marykayintouch-br-Site/pt_BR/Checkout-SubmitBonuses&apos;]]&apos; is not a valid XPath expression.<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception<br/>
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [1c28c486ef7861e30f08c39cb3e03b73, findElement {using=xpath, value=//button[@data-action=&apos;/on/demandware.store/Sites-marykayintouch-br-Site/pt_BR/Checkout-SubmitBonuses&apos;]]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59602}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59602/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 1c28c486ef7861e30f08c39cb3e03b73</b></a><br/>
+		<div class="stackTrace" id="exception-4c4bd9ca-ccc3-4c7b-9c87-a7bc59a93126">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+					testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:239)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br/>
+					org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
+					org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br/>
+					org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:794)<br/>
+					org.testng.TestRunner.run(TestRunner.java:596)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+			  
 	</tbody>
 	</table>
 </div>

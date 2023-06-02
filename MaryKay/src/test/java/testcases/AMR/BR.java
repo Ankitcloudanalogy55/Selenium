@@ -15,7 +15,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -82,7 +81,7 @@ public class BR extends Base {
 			js.executeScript("arguments[0].scrollIntoView(true);", email);
 			email.click();
 			driver.findElement(By.xpath(BR_loc.getProperty("EMAIL"))).clear();
-			driver.findElement(By.xpath(BR_loc.getProperty("EMAIL"))).sendKeys(Keys.CONTROL + "V");
+			driver.findElement(By.xpath(BR_loc.getProperty("EMAIL"))).sendKeys(Mail);
 //  THIS WILL USE TO EXECUTE JAVASCRIPT CODE IN JAVA LANGUAGE
 			js.executeScript("window.scroll(0,800)", "");
 			driver.findElement(By.xpath(BR_loc.getProperty("REGISTER_BUTTON"))).click();
@@ -170,13 +169,13 @@ public class BR extends Base {
 		wait.until(ExpectedConditions.visibilityOfAllElements(APPLY_MASK_CHECKBOX)).get(0).click();
 		List <WebElement> GENERATE_BUTTON = driver.findElements(By.xpath(config.getProperty("GENERATE_BUTTON")));
 		wait.until(ExpectedConditions.visibilityOfAllElements(GENERATE_BUTTON)).get(0).click();
-//		List <WebElement> CPF_FIELD = driver.findElements(By.xpath(config.getProperty("CPF_PATH")));
-//		action.doubleClick((WebElement) CPF_FIELD.get(0)).sendKeys(Keys.CONTROL + "C");
-//		System.out.println(CPF_GENERATOR_VAR);
+		List <WebElement> CPF_FIELD = driver.findElements(By.xpath(config.getProperty("CPF_PATH")));
+		String CPF_NUMBER = CPF_FIELD.get(0).getAttribute("value");
+		System.out.println("CPF NUMBER : "+CPF_NUMBER);
 		driver.switchTo().window(mkWeb);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("CPF")))).sendKeys(Keys.CONTROL + "V");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("CPF")))).sendKeys(CPF_NUMBER);
 		driver.findElement(By.xpath(BR_loc.getProperty("NACIONALIDAD"))).click();
-		driver.findElement(By.xpath(BR_loc.getProperty("RG_RNE"))).sendKeys(Keys.CONTROL + "V");
+		driver.findElement(By.xpath(BR_loc.getProperty("RG_RNE"))).sendKeys(CPF_NUMBER);
 		driver.findElement(By.xpath(BR_loc.getProperty("CONTINUE_BUTTON"))).click();
 			
 // LEGAL INFORMATION PAGE  
@@ -211,49 +210,45 @@ public class BR extends Base {
 
 // STARTER KITS PAGE
 		Thread.sleep(5000);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("Commerce_Continue_Button"))));
-		System.out.println("REVIEW SECTION PASS");
-		System.out.println("STARTER KIT PAGE OPEN");
-		WebElement checkbox1 = driver.findElement(By.xpath(BR_loc.getProperty("Starter_Kit_Radio_Button")));
-		js.executeScript("arguments[0].scrollIntoView(true);", checkbox1);
-		
-		action.moveToElement(checkbox1).click(checkbox1).perform();
-		driver.findElement(By.xpath(BR_loc.getProperty("Commerce_Continue_Button"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("COMMERCE_CONTINUE_BUTTON"))));
+		System.out.println("REVIEW SECTION - PASS");
+		System.out.println("STARTER KIT PAGE - OPEN");
+		WebElement CHECKBOX1 = driver.findElement(By.xpath(BR_loc.getProperty("STARTER_KIT_RADIO_BUTTON")));
+		js.executeScript("arguments[0].scrollIntoView(true);", CHECKBOX1);
+		action.moveToElement(CHECKBOX1).click(CHECKBOX1).perform();
+		driver.findElement(By.xpath(BR_loc.getProperty("COMMERCE_CONTINUE_BUTTON"))).click();
 
-//	SHOOPINGBAGSECTIONS() THROWS INTERRUPTEDEXCEPTION {
+//	HOME SECTION
 		Thread.sleep(5000);
-		WebElement shoopingBagButton = driver.findElement((By.xpath(BR_loc.getProperty("Shooping_Bag_Button"))));
-		js.executeScript("arguments[0].scrollIntoView(true);", shoopingBagButton);
-		wait.until(ExpectedConditions.visibilityOf(shoopingBagButton));
-		System.out.println("STARTER KIT SECTION PASS");
-		shoopingBagButton.click();
+		WebElement SHOOPINGBAGBUTTON = driver.findElement((By.xpath(BR_loc.getProperty("SHOOPING_BAG_BUTTON"))));
+		js.executeScript("arguments[0].scrollIntoView(true);", SHOOPINGBAGBUTTON);
+		wait.until(ExpectedConditions.visibilityOf(SHOOPINGBAGBUTTON));
+		System.out.println("STARTER KIT SECTION - PASS");
+		SHOOPINGBAGBUTTON.click();
 
-//	BOLSASECTION() THROWS INTERRUPTEDEXCEPTION {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("Bolsa_Da_Compras_Button"))))
-				.click();
-		System.out.println("SHOOPING BAG SECTIONS PASS");
+//	SACOLA PAGE
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("FINALIZAR_PREDIDO")))).click();
+		System.out.println("SHOOPING BAG SECTIONS - PASS");
 
-//	PRECONOCIMIENTOS() THROWS INTERRUPTEDEXCEPTION {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("Promotional_Checkbox"))))
-				.click();
-		System.out.println("BOLSA SECTION PASS");
-		WebElement continuarbutton = driver.findElement(By.xpath(BR_loc.getProperty("Recognitions_Continue_Button")));
-		js.executeScript("arguments[0].scrollIntoView(true);", continuarbutton);
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("Recognitions_Continue_Button")))).click();
+//	1.BONUS PAGE
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("BONUS_LABEL"))));
+		System.out.println("SACOLA SECTION - PASS");
+		List <WebElement> CONTINUE = driver.findElements(By.xpath(BR_loc.getProperty("BONUS_CONTINUE")));
+		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUE.get(0));
+		Thread.sleep(5000);
+		driver.findElement(By.xpath(BR_loc.getProperty("BONUS_CONTINUE_BUTTON"))).click();
 		
-// INFORMACIONSECTION() THROWS INTERRUPTEDEXCEPTION {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+// 2.ENVIO PAGE
 		Thread.sleep(3000);
-		WebElement continueToPaymentButton = driver.findElement(By.xpath(BR_loc.getProperty("Continue_With_Payment_Button")));
-		wait.until(ExpectedConditions.visibilityOf(continueToPaymentButton));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("ENVIO_HEADING"))));
 		System.out.println("RECONOCIMIENTOS SECTION PASS");
 		Thread.sleep(3000);
-		js.executeScript("window.scroll(0,900)", "");
-		js.executeScript("arguments[0].scrollIntoView(true);", continueToPaymentButton);
-		continueToPaymentButton.click();
+		List <WebElement> CONTINUETOPAYMENTBUTTON = driver.findElements(By.xpath(BR_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
+		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON.get(1));
+		Thread.sleep(5000);
+		driver.findElement(By.xpath(BR_loc.getProperty("PAYMENT_BUTTON"))).click();
 
-// PAYMENTSECTION() THROWS INTERRUPTEDEXCEPTION {
+// 3.PAYMENT SECTION
 		Thread.sleep(5000);
 		wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath(BR_loc.getProperty("Payment_Section_Checkbox1"))))

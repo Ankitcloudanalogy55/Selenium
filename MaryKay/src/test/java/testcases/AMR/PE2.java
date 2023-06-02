@@ -29,7 +29,7 @@ public class PE2 extends Base {
 	public static String[] consultantID = { "183269", "183269" };
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public static void peruAgreement() throws InterruptedException, IOException {
+	public static void PERU_AGREEMENT() throws InterruptedException, IOException {
 //	COMMON
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -40,6 +40,7 @@ public class PE2 extends Base {
 		driver.get(config.getProperty("FAKE_MAIL_URL"));
 		System.out.println("FAKE MAIL OPEN ");
 		fakeMailWeb = driver.getWindowHandle();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PE_loc.getProperty("Mail"))));
 		driver.findElement(By.xpath(PE_loc.getProperty("Copy_Mail_Button"))).click();
 		String Mail = driver.findElement(By.xpath(PE_loc.getProperty("Mail"))).getText();
 		driver.switchTo().newWindow(WindowType.TAB);

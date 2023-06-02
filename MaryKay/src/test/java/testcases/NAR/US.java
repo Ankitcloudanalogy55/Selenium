@@ -26,7 +26,7 @@ public class US extends Base {
 	
 	
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public static void usAgreement() throws InterruptedException, IOException {
+	public static void US_AGREEMENT() throws InterruptedException, IOException {
 
 // COMMON 		      
 		driver.manage().window().maximize();
@@ -172,10 +172,6 @@ public class US extends Base {
 		List <WebElement> CONTINUETOPAYMENTBUTTON = driver.findElements(By.xpath(US_loc.getProperty("CONTINUE_TO_PAYMENT_BUTTON")));
 		js.executeScript("arguments[0].scrollIntoView(true);", CONTINUETOPAYMENTBUTTON.get(0));
 		Thread.sleep(10000);
-//		driver.switchTo().frame("DW-SFToolkit");
-//		action.click(driver.findElement(By.xpath(US_loc.getProperty("PANEL"))));
-//		driver.switchTo().parentFrame();
-//		action.click(CONTINUETOPAYMENTBUTTON.get(0));
 		driver.findElement(By.xpath(US_loc.getProperty("PAYMENT_BUTTON"))).click();
 		
 // PAYMENT SECTION
