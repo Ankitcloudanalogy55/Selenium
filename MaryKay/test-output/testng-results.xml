@@ -1,143 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
+      <![CDATA[Method name is = US_AGREEMENT]]>
     </line>
     <line>
-      <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
-    </line>
-    <line>
-      <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/Jun-02-18-45-47-IST-2023.png>Fail Test Results</a>]]>
+      <![CDATA[Status of execution is = 1]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-02T18:36:25 IST" name="Suite" finished-at="2023-06-02T18:45:47 IST" duration-ms="561993">
+  <suite started-at="2023-06-05T18:50:37 IST" name="Regreesion Suite" finished-at="2023-06-05T18:56:25 IST" duration-ms="347655">
     <groups>
     </groups>
-    <test started-at="2023-06-02T18:36:25 IST" name="Test" finished-at="2023-06-02T18:45:47 IST" duration-ms="561993">
-      <class name="testcases.AMR.BR">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.AMR.BR@4bc222e]" started-at="2023-06-02T18:36:21 IST" name="launchBrowser" finished-at="2023-06-02T18:36:25 IST" duration-ms="4094" status="PASS">
+    <test started-at="2023-06-05T18:50:37 IST" name="FUnctional Testing" finished-at="2023-06-05T18:56:25 IST" duration-ms="347655">
+      <class name="testcases.NAR.US">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.NAR.US@75c56eb9]" started-at="2023-06-05T18:50:30 IST" name="launchBrowser" finished-at="2023-06-05T18:50:37 IST" duration-ms="6999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method retried="true" signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@4bc222e]" started-at="2023-06-02T18:36:25 IST" name="BRAZIL_AGREEMENT" finished-at="2023-06-02T18:41:05 IST" duration-ms="280002" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //H4[text()='Endere�os de Entrega'] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51308/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f236377f19b7ea2c36f4ebc642234d54]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //H4[text()='Endere�os de Entrega'] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51308/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f236377f19b7ea2c36f4ebc642234d54
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:243)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="US_AGREEMENT()[pri:0, instance:testcases.NAR.US@75c56eb9]" started-at="2023-06-05T18:50:37 IST" name="US_AGREEMENT" finished-at="2023-06-05T18:56:25 IST" duration-ms="347579" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BRAZIL_AGREEMENT -->
-        <test-method signature="BRAZIL_AGREEMENT()[pri:0, instance:testcases.AMR.BR@4bc222e]" started-at="2023-06-02T18:41:07 IST" name="BRAZIL_AGREEMENT" finished-at="2023-06-02T18:45:47 IST" duration-ms="279900" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //H4[text()='Endere�os de Entrega'] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51882/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 72f9606f7f2e5fb0fe2a02aad81e96a0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //H4[text()='Endere�os de Entrega'] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CLOUDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51882/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 72f9606f7f2e5fb0fe2a02aad81e96a0
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at testcases.AMR.BR.BRAZIL_AGREEMENT(BR.java:243)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is = BRAZIL_AGREEMENT]]>
+              <![CDATA[Method name is = US_AGREEMENT]]>
             </line>
             <line>
-              <![CDATA[<a href=C:\PROJECTS\MaryKay/screenshot/Jun-02-18-45-47-IST-2023.png>Fail Test Results</a>]]>
+              <![CDATA[Status of execution is = 1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- BRAZIL_AGREEMENT -->
-        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testcases.AMR.BR@4bc222e]" started-at="2023-06-02T18:45:47 IST" name="closingBrowser" finished-at="2023-06-02T18:46:03 IST" duration-ms="16382" status="PASS">
+        </test-method> <!-- US_AGREEMENT -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testcases.NAR.US@75c56eb9]" started-at="2023-06-05T18:56:25 IST" name="closingBrowser" finished-at="2023-06-05T18:56:42 IST" duration-ms="17139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingBrowser -->
-      </class> <!-- testcases.AMR.BR -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testcases.NAR.US -->
+    </test> <!-- FUnctional Testing -->
+  </suite> <!-- Regreesion Suite -->
 </testng-results>
